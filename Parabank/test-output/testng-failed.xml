@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.ReportListener"/>
+  </listeners>
+  <test thread-count="6" parallel="methods" name="Test(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="tests.LogInTestCases">
+        <methods>
+          <include name="invalidLogIn"/>
+          <include name="validLogIn"/>
+          <include name="tear_down"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LogInTestCases -->
+      <class name="tests.RegisterTestCases">
+        <methods>
+          <include name="successfulRegister"/>
+          <include name="tear_down"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.RegisterTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="6" parallel="methods" name="Test2(failed)">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="tests.LogInTestCases">
+        <methods>
+          <include name="invalidLogIn"/>
+          <include name="validLogIn"/>
+          <include name="tear_down"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LogInTestCases -->
+      <class name="tests.RegisterTestCases">
+        <methods>
+          <include name="successfulRegister"/>
+          <include name="tear_down"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.RegisterTestCases -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
