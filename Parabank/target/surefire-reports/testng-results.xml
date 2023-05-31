@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-31T14:52:16 EET" name="Suite" finished-at="2023-05-31T14:54:03 EET" duration-ms="106745">
+    <groups>
+    </groups>
+    <test started-at="2023-05-31T14:52:16 EET" name="Test" finished-at="2023-05-31T14:54:03 EET" duration-ms="106745">
+      <class name="tests.LogInTestCases">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@19650aa6]" started-at="2023-05-31T14:52:39 EET" name="setup" finished-at="2023-05-31T14:52:40 EET" duration-ms="686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogIn()[pri:0, instance:tests.LogInTestCases@19650aa6]" started-at="2023-05-31T14:52:40 EET" name="invalidLogIn" finished-at="2023-05-31T14:52:43 EET" duration-ms="3422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogIn -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@19650aa6]" started-at="2023-05-31T14:52:43 EET" name="tear_down" finished-at="2023-05-31T14:53:00 EET" duration-ms="16249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@19650aa6]" started-at="2023-05-31T14:53:00 EET" name="setup" finished-at="2023-05-31T14:53:00 EET" duration-ms="694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLogIn()[pri:0, instance:tests.LogInTestCases@19650aa6]" started-at="2023-05-31T14:53:00 EET" name="validLogIn" finished-at="2023-05-31T14:53:05 EET" duration-ms="4506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogIn -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@19650aa6]" started-at="2023-05-31T14:53:05 EET" name="tear_down" finished-at="2023-05-31T14:53:21 EET" duration-ms="16206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- tests.LogInTestCases -->
+      <class name="tests.NewAccountTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@3ce53f6a]" started-at="2023-05-31T14:53:21 EET" name="setup" finished-at="2023-05-31T14:53:22 EET" duration-ms="697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openCheckingAccounts()[pri:0, instance:tests.NewAccountTests@3ce53f6a]" started-at="2023-05-31T14:53:22 EET" name="openCheckingAccounts" finished-at="2023-05-31T14:53:25 EET" duration-ms="3452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckingAccounts -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@3ce53f6a]" started-at="2023-05-31T14:53:25 EET" name="tear_down" finished-at="2023-05-31T14:53:41 EET" duration-ms="16256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@3ce53f6a]" started-at="2023-05-31T14:53:41 EET" name="setup" finished-at="2023-05-31T14:53:42 EET" duration-ms="689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openSavingAccounts()[pri:0, instance:tests.NewAccountTests@3ce53f6a]" started-at="2023-05-31T14:53:42 EET" name="openSavingAccounts" finished-at="2023-05-31T14:53:46 EET" duration-ms="4312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSavingAccounts -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@3ce53f6a]" started-at="2023-05-31T14:53:46 EET" name="tear_down" finished-at="2023-05-31T14:54:03 EET" duration-ms="16211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- tests.NewAccountTests -->
+      <class name="tests.RegisterTestCases">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.RegisterTestCases@199bc830]" started-at="2023-05-31T14:52:16 EET" name="setup" finished-at="2023-05-31T14:52:18 EET" duration-ms="1749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="successfulRegister()[pri:0, instance:tests.RegisterTestCases@199bc830]" started-at="2023-05-31T14:52:18 EET" name="successfulRegister" finished-at="2023-05-31T14:52:23 EET" duration-ms="5201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulRegister -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.RegisterTestCases@199bc830]" started-at="2023-05-31T14:52:23 EET" name="tear_down" finished-at="2023-05-31T14:52:39 EET" duration-ms="16250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- tests.RegisterTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite started-at="2023-05-31T14:54:03 EET" name="Suite (0)" finished-at="2023-05-31T14:54:39 EET" duration-ms="36734">
+    <groups>
+    </groups>
+    <test started-at="2023-05-31T14:54:03 EET" name="Test" finished-at="2023-05-31T14:54:39 EET" duration-ms="36734">
+      <class name="tests.LogInTestCases">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@3a6e9856]" started-at="2023-05-31T14:54:10 EET" name="setup" finished-at="2023-05-31T14:54:12 EET" duration-ms="2036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLogIn()[pri:0, instance:tests.LogInTestCases@3a6e9856]" started-at="2023-05-31T14:54:12 EET" name="invalidLogIn" finished-at="2023-05-31T14:54:16 EET" duration-ms="4072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogIn -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@3a6e9856]" started-at="2023-05-31T14:54:16 EET" name="tear_down" finished-at="2023-05-31T14:54:17 EET" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@3a6e9856]" started-at="2023-05-31T14:54:17 EET" name="setup" finished-at="2023-05-31T14:54:18 EET" duration-ms="1882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLogIn()[pri:0, instance:tests.LogInTestCases@3a6e9856]" started-at="2023-05-31T14:54:18 EET" name="validLogIn" finished-at="2023-05-31T14:54:24 EET" duration-ms="5803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogIn -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@3a6e9856]" started-at="2023-05-31T14:54:24 EET" name="tear_down" finished-at="2023-05-31T14:54:25 EET" duration-ms="487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- tests.LogInTestCases -->
+      <class name="tests.NewAccountTests">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@4863c8ac]" started-at="2023-05-31T14:54:25 EET" name="setup" finished-at="2023-05-31T14:54:27 EET" duration-ms="1783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openCheckingAccounts()[pri:0, instance:tests.NewAccountTests@4863c8ac]" started-at="2023-05-31T14:54:27 EET" name="openCheckingAccounts" finished-at="2023-05-31T14:54:31 EET" duration-ms="4304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckingAccounts -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@4863c8ac]" started-at="2023-05-31T14:54:31 EET" name="tear_down" finished-at="2023-05-31T14:54:31 EET" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@4863c8ac]" started-at="2023-05-31T14:54:31 EET" name="setup" finished-at="2023-05-31T14:54:33 EET" duration-ms="2046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="openSavingAccounts()[pri:0, instance:tests.NewAccountTests@4863c8ac]" started-at="2023-05-31T14:54:33 EET" name="openSavingAccounts" finished-at="2023-05-31T14:54:39 EET" duration-ms="5672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSavingAccounts -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@4863c8ac]" started-at="2023-05-31T14:54:39 EET" name="tear_down" finished-at="2023-05-31T14:54:39 EET" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- tests.NewAccountTests -->
+      <class name="tests.RegisterTestCases">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.RegisterTestCases@67c6f4d8]" started-at="2023-05-31T14:54:03 EET" name="setup" finished-at="2023-05-31T14:54:05 EET" duration-ms="2069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="successfulRegister()[pri:0, instance:tests.RegisterTestCases@67c6f4d8]" started-at="2023-05-31T14:54:05 EET" name="successfulRegister" finished-at="2023-05-31T14:54:09 EET" duration-ms="4644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulRegister -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.RegisterTestCases@67c6f4d8]" started-at="2023-05-31T14:54:09 EET" name="tear_down" finished-at="2023-05-31T14:54:10 EET" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- tests.RegisterTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
+</testng-results>

@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.FakeData;
@@ -24,7 +25,7 @@ public class RegisterTestCases extends SetupDriver{
 		registerpage.typeFormRepeatPassworf(fakers.fake_password);
 		registerpage.typeFormUserName(fakers.username);
 		registerpage.clickFormSubmitBtn();
-//		Assert.assertTrue(driver.findElement(registerpage.account_created_message).isDisplayed());
+		Assert.assertTrue(driver.findElement(registerpage.account_created_message).isDisplayed());
 	}
 	
 

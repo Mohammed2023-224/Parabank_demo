@@ -52,6 +52,7 @@ public class RegisterPage extends SetupDriver{
 	
 	
 	public void typeFormUserName(String username) {
+		
 		Action ac = new Action(driver);
 		ac.explicitWaitTillElementVisibility(user_name_field_registration, 5);
 		ac.typing(user_name_field_registration, username);

@@ -39,6 +39,7 @@ public class LogInTestCases extends SetupDriver {
 		loginform.typePassword("hhh");
 		loginform.clickLogin();
 		Assert.assertTrue(driver.findElement(account_overview.welcome_message).isDisplayed());
+
 	}
 
 	@Test
