@@ -1,13 +1,13 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
 import base.SetupDriver;
 
-public class RegisterPage extends SetupDriver{
+public class RegisterPage extends DriverIdentify{
 
 	
 	//registration form first name field
@@ -41,16 +41,7 @@ public class RegisterPage extends SetupDriver{
 	public By repeat_password_field = (By.xpath("//table[@class='form2']//descendant::input[@id='repeatedPassword']"));
 	//registration form submit btn
 	public By submit_register_btn = (By.xpath("//table[@class='form2']//descendant::input[@class='button']"));
-	
-
-	// initialize all elements
-	public RegisterPage() {
-		PageFactory.initElements(driver, this);
-	}
-
-	
-	
-	
+		
 	public void typeFormUserName(String username) {
 		
 		Action ac = new Action(driver);
@@ -140,7 +131,7 @@ public class RegisterPage extends SetupDriver{
 
 	public void navigateToPage() {
 		LogInForm loginform=new LogInForm();
-		driver.navigate().to(prop.getProperty("Home_page"));
+		driver.navigate().to(SetupDriver.prop.getProperty("Home_page"));
 		
 		loginform.clickRegister();
 		Loggers.logger.info("Navigate to Register page");

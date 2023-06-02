@@ -1,13 +1,13 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
 import base.SetupDriver;
 
-public class ContactUsPage extends SetupDriver {
+public class ContactUsPage extends DriverIdentify {
 	
 
 	// customer care form name xpath
@@ -25,13 +25,6 @@ public class ContactUsPage extends SetupDriver {
 	// customer care form send btn
 	public By care_form_send_btn = (By.xpath("//input[@class='button' and @value=\"Send to Customer Care\"]"));
 
-
-	// initialize all elements
-	public ContactUsPage() {
-		PageFactory.initElements(driver, this);
-	}
-
-	
 
 	public void clickFormSubmit() {
 		Action ac = new Action(driver);
@@ -70,7 +63,7 @@ public class ContactUsPage extends SetupDriver {
 	
 	public void navigateToPage() {
 		MainButtons homepage = new MainButtons();
-		driver.navigate().to(prop.getProperty("Home_page"));
+		driver.navigate().to(SetupDriver.prop.getProperty("Home_page"));
 
 		homepage.clickContactUs();
 		Loggers.logger.info("Navigate to contact us page");

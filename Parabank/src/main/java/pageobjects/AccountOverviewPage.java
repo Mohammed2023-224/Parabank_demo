@@ -2,10 +2,10 @@ package pageobjects;
 
 import org.openqa.selenium.By;
 
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class AccountOverviewPage extends SetupDriver {
+public class AccountOverviewPage extends DriverIdentify {
 
 
 	public By welcome_message=(By.xpath("//div[@id='leftPanel']"));

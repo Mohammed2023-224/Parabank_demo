@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class TransferFundsPage extends SetupDriver {
+public class TransferFundsPage extends DriverIdentify {
 	public By amount_field=(By.xpath("//input[@id='amount']"));
 
 	public By from_account_selection=(By.xpath("//select[@id='fromAccountId']"));
@@ -16,12 +15,7 @@ public class TransferFundsPage extends SetupDriver {
 	
 
 	public By trabsfer_btn=(By.xpath("//input[@class='button' and @value='Transfer']"));
-	
-	
-	// initialize all elements
-	public TransferFundsPage() {
-		PageFactory.initElements(driver, this);
-	}	
+
 		public void typeAmount(String amount) {
 			Action ac = new Action(driver);
 			ac.explicitWaitTillElementVisibility(amount_field, 5);

@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class LeftPanelLinks extends SetupDriver {
+public class LeftPanelLinks extends DriverIdentify {
 	// left menu about us link xpath
 	public By about_us_link = (By.xpath("//ul[@class='leftmenu']//child::a[text()='About Us']"));
 	// left menu services link xpath
@@ -18,11 +17,6 @@ public class LeftPanelLinks extends SetupDriver {
 	public By locations_link = (By.xpath("//ul[@class='leftmenu']//child::a[text()='Locations']"));
 	// left menu admin page link xpath
 	public By admin_page_link = (By.xpath("//ul[@class='leftmenu']//child::a[text()='Admin Page']"));
-
-	// initialize all elements
-	public LeftPanelLinks() {
-		PageFactory.initElements(driver, this);
-	}
 
 	public void clickServices() {
 		Action ac = new Action(driver);

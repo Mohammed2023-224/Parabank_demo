@@ -58,8 +58,10 @@ public class SetupDriver {
 	}
 	@AfterMethod
 	public void tear_down() {
-		driver.close();
+
+		DriverFactory.getDriver().close();
 		DriverFactory.unload();
+
 //		driver.close();
 		Loggers.logger.info("end session");
 	}

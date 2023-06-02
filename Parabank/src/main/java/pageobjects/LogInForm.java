@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class LogInForm extends SetupDriver{
+public class LogInForm extends DriverIdentify{
 
 	// username xpath
 	public By user_name_field = (By.xpath("//div[@class='login']//child::input[@name='username']"));
@@ -23,11 +22,6 @@ public class LogInForm extends SetupDriver{
 	//error message
 	public By error_message=(By.xpath("//p[@class='error']"));
 
-	// initialize all elements
-	public LogInForm() {
-		PageFactory.initElements(driver, this);
-	}
-	
 	
 	public void typeUserName(String username) {
 		Action ac = new Action(driver);

@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class FooterLinks extends SetupDriver {
+public class FooterLinks extends DriverIdentify {
 
 	// home footer link xpath
 	public By home_footer_link = (By.xpath("//div[@id=\"footerPanel\"]//a[text()='Home']"));
@@ -30,11 +29,6 @@ public class FooterLinks extends SetupDriver {
 			"//div[@id='footerPanel']//a[text()='Site Map']"));
 	// contacts footer link xpath
 	public By contacts_footer_link = (By.xpath("//div[@id='footerPanel']//a[text()='Contact Us']"));
-
-	// initialize all elements
-	public FooterLinks() {
-		PageFactory.initElements(driver, this);
-	}
 
 	public void clickHomeFooterLink() {
 		Action ac = new Action(driver);

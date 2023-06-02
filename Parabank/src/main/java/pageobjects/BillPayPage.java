@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class BillPayPage extends SetupDriver{
+public class BillPayPage extends DriverIdentify{
 	
 	public By Payeename_field = (By.xpath("//input[@name='payee.name']"));
 	
@@ -34,10 +33,7 @@ public class BillPayPage extends SetupDriver{
 	
 	public By send_payment_btn = (By.xpath("//input[@name='Send Payment']"));
 	
-	// initialize all elements
-	public BillPayPage() {
-		PageFactory.initElements(driver, this);
-	}
+
 	
 	public void typePayeeName(String name) {
 		Action ac = new Action(driver);

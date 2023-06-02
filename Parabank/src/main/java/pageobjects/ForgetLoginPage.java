@@ -1,13 +1,13 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
 import base.SetupDriver;
 
-public class ForgetLoginPage extends SetupDriver {
+public class ForgetLoginPage extends DriverIdentify {
 
 
 	// forget login form first name field
@@ -31,14 +31,7 @@ public class ForgetLoginPage extends SetupDriver {
 	// forget login form submit btn
 	public By find_login_btn = (By.xpath("//table[@class='form2']//descendant::input[@class='button']"));
 
-	// initialize all elements
-	public ForgetLoginPage() {
-		PageFactory.initElements(driver, this);
-	}
-	
-	
-	
-	
+
 	public void typeFormCity(String city) {
 		Action ac = new Action(driver);
 		ac.explicitWaitTillElementVisibility(city_field, 5);
@@ -97,7 +90,7 @@ public class ForgetLoginPage extends SetupDriver {
 
 	public void navigateToPage() {
 		LogInForm loginform=new LogInForm();
-		driver.navigate().to(prop.getProperty("Home_page"));
+		driver.navigate().to(SetupDriver.prop.getProperty("Home_page"));
 
 		loginform.clickForgetLoginInfo();
 		Loggers.logger.info("Navigate to forget login info page");

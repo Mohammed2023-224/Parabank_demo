@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test3</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 31 16:01:10 EET 2023</td>
+<td>Started on:</td><td>Fri Jun 02 18:13:39 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21589 ms)</td>
+<tr><td>Total time:</td><td>50 seconds (50196 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,62 +75,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RegisterTestCases.successfulRegister()'><b>successfulRegister</b><br>Test class: tests.RegisterTestCases</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference 413beea2-ee30-4280-ad26-1dd1698df66a is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+<td title='tests.LogInTestCases.validLogIn()'><b>validLogIn</b><br>Test class: tests.LogInTestCases</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3f57154c-9737-410e-a345-6a1e6bf31a7a, clickElement {id=413beea2-ee30-4280-ad26-1dd1698df66a}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:28195, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21200, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:28195/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (3f57154c-9737-410e-a345-6a1e6bf31a7a)] -&gt; xpath: //a[text()=&apos;Register&apos;]]
-Session ID: 3f57154c-9737-410e-a345-6a1e6bf31a7a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at base.Action.click(Action.java:39)
-	at pageobjects.LogInForm.clickRegister(LogInForm.java:56)
-	at pageobjects.RegisterPage.navigateToPage(RegisterPage.java:145)
-	at tests.RegisterTestCases.successfulRegister(RegisterTestCases.java:15)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59115}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59115/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56975a11ef077b3e71cf2bb5a387aaf6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
+	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace618666044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace618666044'><pre>org.openqa.selenium.StaleElementReferenceException: The element with the reference 413beea2-ee30-4280-ad26-1dd1698df66a is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906746310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906746310'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3f57154c-9737-410e-a345-6a1e6bf31a7a, clickElement {id=413beea2-ee30-4280-ad26-1dd1698df66a}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:28195, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21200, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:28195/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (3f57154c-9737-410e-a345-6a1e6bf31a7a)] -&gt; xpath: //a[text()=&apos;Register&apos;]]
-Session ID: 3f57154c-9737-410e-a345-6a1e6bf31a7a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at base.Action.click(Action.java:39)
-	at pageobjects.LogInForm.clickRegister(LogInForm.java:56)
-	at pageobjects.RegisterPage.navigateToPage(RegisterPage.java:145)
-	at tests.RegisterTestCases.successfulRegister(RegisterTestCases.java:15)
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59115}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59115/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56975a11ef077b3e71cf2bb5a387aaf6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
+	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,8 +126,36 @@ Session ID: 3f57154c-9737-410e-a345-6a1e6bf31a7a
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>17</td>
-<td>tests.RegisterTestCases@1c0cf193</td></tr>
+<td>16</td>
+<td>tests.LogInTestCases@188bf4d8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.RegisterTestCases.successfulRegister()'><b>successfulRegister</b><br>Test class: tests.RegisterTestCases</td>
+<td></td>
+<td>6</td>
+<td>tests.RegisterTestCases@5e62ca19</td></tr>
+<tr>
+<td title='tests.NewAccountTests.openCheckingAccounts()'><b>openCheckingAccounts</b><br>Test class: tests.NewAccountTests</td>
+<td></td>
+<td>5</td>
+<td>tests.NewAccountTests@7dd7ec56</td></tr>
+<tr>
+<td title='tests.NewAccountTests.openSavingAccounts()'><b>openSavingAccounts</b><br>Test class: tests.NewAccountTests</td>
+<td></td>
+<td>3</td>
+<td>tests.NewAccountTests@7dd7ec56</td></tr>
+<tr>
+<td title='tests.LogInTestCases.invalidLogIn()'><b>invalidLogIn</b><br>Test class: tests.LogInTestCases</td>
+<td></td>
+<td>4</td>
+<td>tests.LogInTestCases@188bf4d8</td></tr>
 </table><p>
 </body>
 </html>

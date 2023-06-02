@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class OpenNewAccountPage extends SetupDriver {
+public class OpenNewAccountPage extends DriverIdentify {
 
 
 
@@ -20,14 +19,6 @@ public By acoount_id_verification=(By.xpath("//h1[@class='title']"));
 	public By accout_type_selection=(By.xpath("//select[@id='type']"));
 	//open new account btn
 	public By open_new_account_btn=(By.xpath("//input[@type='submit']"));
-	
-	
-	
-	// initialize all elements
-	public OpenNewAccountPage() {
-		PageFactory.initElements(driver, this);
-	}
-
 	
 
 	public void navigateToPage() {

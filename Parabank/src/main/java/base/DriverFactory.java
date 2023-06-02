@@ -3,14 +3,14 @@ package base;
 import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
-	   private DriverFactory()
-	   {
-	   }
-	   private static DriverFactory instance = new DriverFactory();
-	   public static DriverFactory getInstance()
-	   {
-	      return instance;
-	   }
+//	   private DriverFactory()
+//	   {
+//	   }
+//	   private static DriverFactory instance = new DriverFactory();
+//	   public static DriverFactory getInstance()
+//	   {
+//	      return instance;
+//	   }
 	private static final ThreadLocal<WebDriver> THREAD_LOCAL=new ThreadLocal<>();
 	
 	public static WebDriver getDriver() {

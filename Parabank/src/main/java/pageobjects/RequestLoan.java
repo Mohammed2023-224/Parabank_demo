@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class RequestLoan extends SetupDriver{
+public class RequestLoan extends DriverIdentify{
 
 	public By loan_amount=(By.xpath("//input[@id='amount']"));
 	
@@ -17,10 +16,7 @@ public class RequestLoan extends SetupDriver{
 	public By from_account_selection=(By.xpath("//select[@id='fromAccountId']"));
 	
 	public By request_btn=(By.xpath("//input[@class='button']"));
-	// initialize all elements
-	public RequestLoan() {
-		PageFactory.initElements(driver, this);
-	}
+
 	public void clicApplyBtn() {
 		Action ac = new Action(driver);
 		ac.explicitWaitTillElementVisibility(request_btn, 5);

@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class AccountServiceLinks extends SetupDriver {
+public class AccountServiceLinks extends DriverIdentify {
 	//new account link
 		public By open_new_account_service = (By.xpath("//a[text()='Open New Account']"));
 	//account overview link
@@ -24,11 +23,6 @@ public class AccountServiceLinks extends SetupDriver {
 		public By request_loan_service = (By.xpath("//a[text()='Request Loan']"));
 	//log out link
 		public By log_out_service = (By.xpath("//a[text()='Log Out']"));
-		
-		// initialize all elements
-		public AccountServiceLinks() {
-			PageFactory.initElements(driver, this);
-		}
 		
 		public void clcikNewAccounts() {
 			Action ac = new Action(driver);

@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class UpdateContactInfo extends SetupDriver {
+public class UpdateContactInfo extends DriverIdentify {
 
 	public By fname=(By.xpath("//input[@id='customer.firstName']"));
 	public By lname=(By.xpath("//input[@id='customer.lastName']"));
@@ -19,11 +18,6 @@ public class UpdateContactInfo extends SetupDriver {
 	public By zipcode=(By.xpath("//input[@id='customer.firstName']"));
 	public By phone=(By.xpath("//input[@id='customer.phoneNumber']"));
 	public By update_btn=(By.xpath("//input[@class='button']"));
-	
-	// initialize all elements
-	public UpdateContactInfo() {
-		PageFactory.initElements(driver, this);
-	}
 	
 	public void typeFname(String firstname) {
 		Action ac = new Action(driver);

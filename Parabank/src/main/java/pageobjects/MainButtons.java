@@ -1,13 +1,12 @@
 package pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class MainButtons extends SetupDriver {
+public class MainButtons extends DriverIdentify {
 
 	// logo xpath
 	public By logo = (By.xpath("//img[@title=\"ParaBank\"]"));
@@ -17,14 +16,6 @@ public class MainButtons extends SetupDriver {
 	public By about_us_button = (By.xpath("//li[@class=\"aboutus\"]"));
 	// contact us xpath
 	public By contact_button = (By.xpath("//li[@class=\"contact\"]"));
-
-
-
-	// initialize all elements
-	public MainButtons() {
-		PageFactory.initElements(driver, this);
-	}
-
 
 
 	public void clickLogo() {

@@ -1,12 +1,11 @@
 package pageobjects;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 import base.Action;
+import base.DriverIdentify;
 import base.Loggers;
-import base.SetupDriver;
 
-public class FindTransacions extends SetupDriver{
+public class FindTransacions extends DriverIdentify{
 	
 	public By find_by_id_field=(By.xpath("//input[@id='criteria.transactionId']"));
 	
@@ -29,10 +28,6 @@ public class FindTransacions extends SetupDriver{
 	
 	public By find_by_amount_btn=(By.xpath("//b[text()='Find by Transaction ID']//following::button[4]"));
 
-	// initialize all elements
-	public FindTransacions() {
-		PageFactory.initElements(driver, this);
-	}
 	
 	public void clickFindByID() {
 		Action ac = new Action(driver);
