@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 02 18:12:51 EET 2023</td>
+<td>Started on:</td><td>Sat Jun 03 13:56:28 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48172 ms)</td>
+<tr><td>Total time:</td><td>140 seconds (140567 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,33 +75,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LogInTestCases.validLogIn()'><b>validLogIn</b><br>Test class: tests.LogInTestCases</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+<td title='tests.FooterTests.testServicesFooterLinks()'><b>testServicesFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .heading
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:29599, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29599/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 319bb66a-34f6-402a-8823-f422334b8577
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
+Command: [f2d3f722-c21f-4ba1-bd11-c8965e8ec053, findElement {using=class name, value=heading}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:37293, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9072, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37293/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2d3f722-c21f-4ba1-bd11-c8965e8ec053
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at tests.FooterTests.testServicesFooterLinks(FooterTests.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2111676825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2111676825'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085058466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2085058466'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .heading
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:29599, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29599/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 319bb66a-34f6-402a-8823-f422334b8577
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
+Command: [f2d3f722-c21f-4ba1-bd11-c8965e8ec053, findElement {using=class name, value=heading}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:37293, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9072, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:37293/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2d3f722-c21f-4ba1-bd11-c8965e8ec053
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at tests.FooterTests.testServicesFooterLinks(FooterTests.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,8 +151,8 @@ Session ID: 319bb66a-34f6-402a-8823-f422334b8577
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>15</td>
-<td>tests.LogInTestCases@7c71c889</td></tr>
+<td>3</td>
+<td>tests.FooterTests@626c569b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -137,25 +162,95 @@ Session ID: 319bb66a-34f6-402a-8823-f422334b8577
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.RegisterTestCases.successfulRegister()'><b>successfulRegister</b><br>Test class: tests.RegisterTestCases</td>
-<td></td>
-<td>4</td>
-<td>tests.RegisterTestCases@38811103</td></tr>
-<tr>
-<td title='tests.LogInTestCases.invalidLogIn()'><b>invalidLogIn</b><br>Test class: tests.LogInTestCases</td>
+<td title='tests.FooterTests.testAboutUsFooterLinks()'><b>testAboutUsFooterLinks</b><br>Test class: tests.FooterTests</td>
 <td></td>
 <td>3</td>
-<td>tests.LogInTestCases@7c71c889</td></tr>
-<tr>
-<td title='tests.NewAccountTests.openSavingAccounts()'><b>openSavingAccounts</b><br>Test class: tests.NewAccountTests</td>
-<td></td>
-<td>5</td>
-<td>tests.NewAccountTests@4cc8d70d</td></tr>
+<td>tests.FooterTests@626c569b</td></tr>
 <tr>
 <td title='tests.NewAccountTests.openCheckingAccounts()'><b>openCheckingAccounts</b><br>Test class: tests.NewAccountTests</td>
 <td></td>
 <td>3</td>
-<td>tests.NewAccountTests@4cc8d70d</td></tr>
+<td>tests.NewAccountTests@79be91eb</td></tr>
+<tr>
+<td title='tests.FooterTests.testLocationFooterLinks()'><b>testLocationFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td></td>
+<td>9</td>
+<td>tests.FooterTests@626c569b</td></tr>
+<tr>
+<td title='tests.RegisterTestCases.unsuccessfulRegister_differentPassword()'><b>unsuccessfulRegister_differentPassword</b><br>Test class: tests.RegisterTestCases</td>
+<td></td>
+<td>4</td>
+<td>tests.RegisterTestCases@19526f1d</td></tr>
+<tr>
+<td title='tests.LogInTestCases.invalidLogIn_NoUserName()'><b>invalidLogIn_NoUserName</b><br>Test class: tests.LogInTestCases</td>
+<td></td>
+<td>2</td>
+<td>tests.LogInTestCases@3d1c933</td></tr>
+<tr>
+<td title='tests.RegisterTestCases.unsuccessfulRegister_NoPassword()'><b>unsuccessfulRegister_NoPassword</b><br>Test class: tests.RegisterTestCases</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisterTestCases@19526f1d</td></tr>
+<tr>
+<td title='tests.FooterTests.testHomeFooterLinks()'><b>testHomeFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td></td>
+<td>3</td>
+<td>tests.FooterTests@626c569b</td></tr>
+<tr>
+<td title='tests.FooterTests.testForumFooterLinks()'><b>testForumFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td></td>
+<td>11</td>
+<td>tests.FooterTests@626c569b</td></tr>
+<tr>
+<td title='tests.FooterTests.testSiteMapFooterLinks()'><b>testSiteMapFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td></td>
+<td>3</td>
+<td>tests.FooterTests@626c569b</td></tr>
+<tr>
+<td title='tests.RegisterTestCases.successfulRegister()'><b>successfulRegister</b><br>Test class: tests.RegisterTestCases</td>
+<td></td>
+<td>5</td>
+<td>tests.RegisterTestCases@19526f1d</td></tr>
+<tr>
+<td title='tests.LogInTestCases.invalidLogIn_wrongCredintials()'><b>invalidLogIn_wrongCredintials</b><br>Test class: tests.LogInTestCases</td>
+<td></td>
+<td>2</td>
+<td>tests.LogInTestCases@3d1c933</td></tr>
+<tr>
+<td title='tests.LogInTestCases.invalidLogIn_NoCredintials()'><b>invalidLogIn_NoCredintials</b><br>Test class: tests.LogInTestCases</td>
+<td></td>
+<td>3</td>
+<td>tests.LogInTestCases@3d1c933</td></tr>
+<tr>
+<td title='tests.LogInTestCases.invalidLogIn_NoPassword()'><b>invalidLogIn_NoPassword</b><br>Test class: tests.LogInTestCases</td>
+<td></td>
+<td>2</td>
+<td>tests.LogInTestCases@3d1c933</td></tr>
+<tr>
+<td title='tests.RegisterTestCases.unsuccessfulRegister_NoUserNmae()'><b>unsuccessfulRegister_NoUserNmae</b><br>Test class: tests.RegisterTestCases</td>
+<td></td>
+<td>3</td>
+<td>tests.RegisterTestCases@19526f1d</td></tr>
+<tr>
+<td title='tests.NewAccountTests.openSavingAccounts()'><b>openSavingAccounts</b><br>Test class: tests.NewAccountTests</td>
+<td></td>
+<td>4</td>
+<td>tests.NewAccountTests@79be91eb</td></tr>
+<tr>
+<td title='tests.FooterTests.testProductsFooterLinks()'><b>testProductsFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td></td>
+<td>7</td>
+<td>tests.FooterTests@626c569b</td></tr>
+<tr>
+<td title='tests.FooterTests.testContactUsFooterLinks()'><b>testContactUsFooterLinks</b><br>Test class: tests.FooterTests</td>
+<td></td>
+<td>2</td>
+<td>tests.FooterTests@626c569b</td></tr>
+<tr>
+<td title='tests.LogInTestCases.validLogIn()'><b>validLogIn</b><br>Test class: tests.LogInTestCases</td>
+<td></td>
+<td>6</td>
+<td>tests.LogInTestCases@3d1c933</td></tr>
 </table><p>
 </body>
 </html>

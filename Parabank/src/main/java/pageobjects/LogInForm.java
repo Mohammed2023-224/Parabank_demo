@@ -3,10 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
+import base.SetupDriver;
 
-public class LogInForm extends DriverIdentify{
+public class LogInForm extends SetupDriver{
 
 	// username xpath
 	public By user_name_field = (By.xpath("//div[@class='login']//child::input[@name='username']"));
@@ -24,41 +25,41 @@ public class LogInForm extends DriverIdentify{
 
 	
 	public void typeUserName(String username) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(user_name_field, 5);
 		ac.typing(user_name_field, username);
 		Loggers.logger.info("type user name");
 	}
 
 	public void typePassword(String pass) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(password_field, 5);
 		ac.typing(password_field, pass);
 		Loggers.logger.info("type password");
 	}
 
 	public void clickLogin() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(log_in_btn, 5);
 		ac.click(log_in_btn);
 		Loggers.logger.info("click on login btn");
 	}
 
 	public void clickRegister() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(register_link, 5);
 		ac.click(register_link);
 		Loggers.logger.info("click on register link");
 	}
 
 	public void clickForgetLoginInfo() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(forget_login_link, 5);
 		ac.click(forget_login_link);
 		Loggers.logger.info("click on forget login info link");
 	}
 	
 	public  String errorTextExtract() {
-		 return driver.findElement(error_message).getText();
+		 return DriverFactory.getDriver().findElement(error_message).getText();
 	}
 }

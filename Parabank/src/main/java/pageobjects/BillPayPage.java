@@ -3,10 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
+import base.SetupDriver;
 
-public class BillPayPage extends DriverIdentify{
+public class BillPayPage extends SetupDriver{
 	
 	public By Payeename_field = (By.xpath("//input[@name='payee.name']"));
 	
@@ -36,14 +37,14 @@ public class BillPayPage extends DriverIdentify{
 
 	
 	public void typePayeeName(String name) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(Payeename_field, 5);
 		ac.typing(Payeename_field, name);
 		Loggers.logger.info("type payee name");
 	}
 	
 	public void typeAdress(String address) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(address_field, 5);
 		ac.typing(address_field, address);
 		Loggers.logger.info("type address");
@@ -51,27 +52,27 @@ public class BillPayPage extends DriverIdentify{
 	
 	
 	public void typeCity(String city) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(city_field, 5);
 		ac.typing(city_field, city);
 		Loggers.logger.info("type city");
 	}
 	public void typeState(String state) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(state_field, 5);
 		ac.typing(state_field, state);
 		Loggers.logger.info("type state");
 	}
 	
 	public void typeZipCode(String zipcode) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(zipcode_field, 5);
 		ac.typing(zipcode_field, zipcode);
 		Loggers.logger.info("type zipcode");
 	}
 	
 	public void typeAccount(String account) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(account_field, 5);
 		ac.typing(account_field, account);
 		Loggers.logger.info("type account");
@@ -79,7 +80,7 @@ public class BillPayPage extends DriverIdentify{
 	
 	
 	public void typeAccountVerification(String account) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(verify_account_field, 5);
 		ac.typing(verify_account_field, account);
 		Loggers.logger.info("type account verification");
@@ -87,13 +88,13 @@ public class BillPayPage extends DriverIdentify{
 	
 	
 	public void typeAmount(String amount) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(amount_field, 5);
 		ac.typing(amount_field, amount);
 		Loggers.logger.info("type amount");
 	}
 	public void clickSend() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(send_payment_btn, 5);
 		ac.click(send_payment_btn);
 		Loggers.logger.info("click on send_payment_btn");

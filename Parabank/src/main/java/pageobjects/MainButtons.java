@@ -3,10 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
+import base.SetupDriver;
 
-public class MainButtons extends DriverIdentify {
+public class MainButtons extends SetupDriver {
 
 	// logo xpath
 	public By logo = (By.xpath("//img[@title=\"ParaBank\"]"));
@@ -19,14 +20,14 @@ public class MainButtons extends DriverIdentify {
 
 
 	public void clickLogo() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(logo, 5);
 		ac.click(logo);
 		Loggers.logger.info("click on logo");
 	}
 
 	public void clickhomeBtn() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(home_button, 5);
 		ac.click(home_button);
 		Loggers.logger.info("click on home button");
@@ -34,7 +35,7 @@ public class MainButtons extends DriverIdentify {
 
 
 	public void clickAboutUs() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(about_us_button, 5);
 		ac.click(about_us_button);
 		Loggers.logger.info("click on about us button");
@@ -42,7 +43,7 @@ public class MainButtons extends DriverIdentify {
 
 
 	public void clickContactUs() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(contact_button, 5);
 		ac.click(contact_button);
 		Loggers.logger.info("click on contacts link");

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T18:12:51 EET" name="Suite" finished-at="2023-06-02T18:14:29 EET" duration-ms="98606">
+  <suite started-at="2023-06-03T15:37:16 EET" name="Suite" finished-at="2023-06-03T15:37:31 EET" duration-ms="14722">
     <groups>
     </groups>
-    <test started-at="2023-06-02T18:12:51 EET" name="Test2" finished-at="2023-06-02T18:13:39 EET" duration-ms="48172">
+    <test started-at="2023-06-03T15:37:16 EET" name="Test" finished-at="2023-06-03T15:37:31 EET" duration-ms="14722">
       <class name="tests.LogInTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@7c71c889]" started-at="2023-06-02T18:13:00 EET" name="setup" finished-at="2023-06-02T18:13:02 EET" duration-ms="2477" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:16 EET" name="setup" finished-at="2023-06-03T15:37:19 EET" duration-ms="3079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,55 +18,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidLogIn()[pri:0, instance:tests.LogInTestCases@7c71c889]" started-at="2023-06-02T18:13:02 EET" name="invalidLogIn" finished-at="2023-06-02T18:13:06 EET" duration-ms="3832" status="PASS">
+        <test-method signature="invalidLogIn_wrongCredintials()[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:19 EET" name="invalidLogIn_wrongCredintials" finished-at="2023-06-03T15:37:23 EET" duration-ms="3586" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLogIn -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@7c71c889]" started-at="2023-06-02T18:13:06 EET" name="tear_down" finished-at="2023-06-02T18:13:06 EET" duration-ms="519" status="PASS">
+        </test-method> <!-- invalidLogIn_wrongCredintials -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:23 EET" name="tear_down" finished-at="2023-06-03T15:37:23 EET" duration-ms="520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@7c71c889]" started-at="2023-06-02T18:13:06 EET" name="setup" finished-at="2023-06-02T18:13:08 EET" duration-ms="2097" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validLogIn()[pri:0, instance:tests.LogInTestCases@7c71c889]" started-at="2023-06-02T18:13:08 EET" name="validLogIn" finished-at="2023-06-02T18:13:24 EET" duration-ms="15196" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="invalid_logins_excel(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:24 EET" name="invalid_logins_excel" data-provider="dataexcelsheet" finished-at="2023-06-03T15:37:24 EET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='login']//child::input[@name='username'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:29599, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29599/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 319bb66a-34f6-402a-8823-f422334b8577]]>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='login']//child::input[@name='username'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:29599, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29599/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 319bb66a-34f6-402a-8823-f422334b8577
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -74,462 +47,55 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because the return value of "org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)" is null
+at util.GetData.read_excel_sheet1(GetData.java:31)
+at tests.LogInTestCases.dataexcelsheet(LogInTestCases.java:134)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalid_logins_excel -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:24 EET" name="setup" finished-at="2023-06-03T15:37:26 EET" duration-ms="1967" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLogIn()[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:26 EET" name="validLogIn" finished-at="2023-06-03T15:37:30 EET" duration-ms="4705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogIn -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@7c71c889]" started-at="2023-06-02T18:13:24 EET" name="tear_down" finished-at="2023-06-02T18:13:24 EET" duration-ms="617" status="PASS">
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@21282ed8]" started-at="2023-06-03T15:37:30 EET" name="tear_down" finished-at="2023-06-03T15:37:31 EET" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
       </class> <!-- tests.LogInTestCases -->
-      <class name="tests.NewAccountTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@4cc8d70d]" started-at="2023-06-02T18:13:24 EET" name="setup" finished-at="2023-06-02T18:13:27 EET" duration-ms="2236" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openCheckingAccounts()[pri:0, instance:tests.NewAccountTests@4cc8d70d]" started-at="2023-06-02T18:13:27 EET" name="openCheckingAccounts" finished-at="2023-06-02T18:13:30 EET" duration-ms="3619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCheckingAccounts -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@4cc8d70d]" started-at="2023-06-02T18:13:30 EET" name="tear_down" finished-at="2023-06-02T18:13:31 EET" duration-ms="573" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@4cc8d70d]" started-at="2023-06-02T18:13:31 EET" name="setup" finished-at="2023-06-02T18:13:33 EET" duration-ms="2093" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openSavingAccounts()[pri:0, instance:tests.NewAccountTests@4cc8d70d]" started-at="2023-06-02T18:13:33 EET" name="openSavingAccounts" finished-at="2023-06-02T18:13:38 EET" duration-ms="5423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSavingAccounts -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@4cc8d70d]" started-at="2023-06-02T18:13:38 EET" name="tear_down" finished-at="2023-06-02T18:13:39 EET" duration-ms="516" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.NewAccountTests -->
-      <class name="tests.RegisterTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.RegisterTestCases@38811103]" started-at="2023-06-02T18:12:51 EET" name="setup" finished-at="2023-06-02T18:12:54 EET" duration-ms="3716" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="successfulRegister()[pri:0, instance:tests.RegisterTestCases@38811103]" started-at="2023-06-02T18:12:54 EET" name="successfulRegister" finished-at="2023-06-02T18:12:59 EET" duration-ms="4486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulRegister -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.RegisterTestCases@38811103]" started-at="2023-06-02T18:12:59 EET" name="tear_down" finished-at="2023-06-02T18:13:00 EET" duration-ms="550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.RegisterTestCases -->
-    </test> <!-- Test2 -->
-    <test started-at="2023-06-02T18:12:51 EET" name="Test" finished-at="2023-06-02T18:14:24 EET" duration-ms="93593">
-      <class name="tests.LogInTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@63b3ee82]" started-at="2023-06-02T18:13:16 EET" name="setup" finished-at="2023-06-02T18:13:17 EET" duration-ms="774" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidLogIn()[pri:0, instance:tests.LogInTestCases@63b3ee82]" started-at="2023-06-02T18:13:17 EET" name="invalidLogIn" finished-at="2023-06-02T18:13:19 EET" duration-ms="2003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogIn -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@63b3ee82]" started-at="2023-06-02T18:13:19 EET" name="tear_down" finished-at="2023-06-02T18:13:19 EET" duration-ms="184" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@63b3ee82]" started-at="2023-06-02T18:13:19 EET" name="setup" finished-at="2023-06-02T18:13:20 EET" duration-ms="766" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validLogIn()[pri:0, instance:tests.LogInTestCases@63b3ee82]" started-at="2023-06-02T18:13:20 EET" name="validLogIn" finished-at="2023-06-02T18:13:24 EET" duration-ms="4831" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogIn -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@63b3ee82]" started-at="2023-06-02T18:13:24 EET" name="tear_down" finished-at="2023-06-02T18:13:41 EET" duration-ms="16262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.LogInTestCases -->
-      <class name="tests.NewAccountTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@2620e717]" started-at="2023-06-02T18:13:41 EET" name="setup" finished-at="2023-06-02T18:13:41 EET" duration-ms="850" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openCheckingAccounts()[pri:0, instance:tests.NewAccountTests@2620e717]" started-at="2023-06-02T18:13:41 EET" name="openCheckingAccounts" finished-at="2023-06-02T18:13:46 EET" duration-ms="4352" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='type']"}
-  (Session info: MicrosoftEdge=113.0.1774.57)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d07c611dc55626a9cdef7a0b87ae7fd, findElement {using=xpath, value=//select[@id='type']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59014}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59014/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d07c611dc55626a9cdef7a0b87ae7fd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='type']"}
-  (Session info: MicrosoftEdge=113.0.1774.57)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d07c611dc55626a9cdef7a0b87ae7fd, findElement {using=xpath, value=//select[@id='type']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59014}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59014/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d07c611dc55626a9cdef7a0b87ae7fd
-at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at tests.NewAccountTests.openCheckingAccounts(NewAccountTests.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCheckingAccounts -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@2620e717]" started-at="2023-06-02T18:13:46 EET" name="tear_down" finished-at="2023-06-02T18:14:02 EET" duration-ms="16254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@2620e717]" started-at="2023-06-02T18:14:02 EET" name="setup" finished-at="2023-06-02T18:14:03 EET" duration-ms="961" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openSavingAccounts()[pri:0, instance:tests.NewAccountTests@2620e717]" started-at="2023-06-02T18:14:03 EET" name="openSavingAccounts" finished-at="2023-06-02T18:14:08 EET" duration-ms="4861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSavingAccounts -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@2620e717]" started-at="2023-06-02T18:14:08 EET" name="tear_down" finished-at="2023-06-02T18:14:24 EET" duration-ms="16279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.NewAccountTests -->
-      <class name="tests.RegisterTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.RegisterTestCases@31ceba99]" started-at="2023-06-02T18:12:51 EET" name="setup" finished-at="2023-06-02T18:12:53 EET" duration-ms="2170" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="successfulRegister()[pri:0, instance:tests.RegisterTestCases@31ceba99]" started-at="2023-06-02T18:12:53 EET" name="successfulRegister" finished-at="2023-06-02T18:13:00 EET" duration-ms="6593" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7551c8a9-3170-4b10-813c-a7a24ad3db22, findElement {using=xpath, value=//h1[@class='title']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:32285, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21148, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:32285/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7551c8a9-3170-4b10-813c-a7a24ad3db22, findElement {using=xpath, value=//h1[@class='title']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:32285, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21148, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:32285/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at tests.RegisterTestCases.successfulRegister(RegisterTestCases.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulRegister -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.RegisterTestCases@31ceba99]" started-at="2023-06-02T18:13:00 EET" name="tear_down" finished-at="2023-06-02T18:13:16 EET" duration-ms="16240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.RegisterTestCases -->
     </test> <!-- Test -->
-    <test started-at="2023-06-02T18:13:39 EET" name="Test3" finished-at="2023-06-02T18:14:29 EET" duration-ms="50196">
-      <class name="tests.LogInTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@188bf4d8]" started-at="2023-06-02T18:13:48 EET" name="setup" finished-at="2023-06-02T18:13:51 EET" duration-ms="2315" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="invalidLogIn()[pri:0, instance:tests.LogInTestCases@188bf4d8]" started-at="2023-06-02T18:13:51 EET" name="invalidLogIn" finished-at="2023-06-02T18:13:55 EET" duration-ms="4705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogIn -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@188bf4d8]" started-at="2023-06-02T18:13:55 EET" name="tear_down" finished-at="2023-06-02T18:13:55 EET" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LogInTestCases@188bf4d8]" started-at="2023-06-02T18:13:55 EET" name="setup" finished-at="2023-06-02T18:13:58 EET" duration-ms="2650" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validLogIn()[pri:0, instance:tests.LogInTestCases@188bf4d8]" started-at="2023-06-02T18:13:58 EET" name="validLogIn" finished-at="2023-06-02T18:14:15 EET" duration-ms="16756" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='login']//child::input[@name='username'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59115}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59115/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56975a11ef077b3e71cf2bb5a387aaf6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='login']//child::input[@name='username'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59115}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59115/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56975a11ef077b3e71cf2bb5a387aaf6
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLogIn -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.LogInTestCases@188bf4d8]" started-at="2023-06-02T18:14:15 EET" name="tear_down" finished-at="2023-06-02T18:14:15 EET" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.LogInTestCases -->
-      <class name="tests.NewAccountTests">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@7dd7ec56]" started-at="2023-06-02T18:14:15 EET" name="setup" finished-at="2023-06-02T18:14:17 EET" duration-ms="2630" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openCheckingAccounts()[pri:0, instance:tests.NewAccountTests@7dd7ec56]" started-at="2023-06-02T18:14:17 EET" name="openCheckingAccounts" finished-at="2023-06-02T18:14:23 EET" duration-ms="5129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openCheckingAccounts -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@7dd7ec56]" started-at="2023-06-02T18:14:23 EET" name="tear_down" finished-at="2023-06-02T18:14:23 EET" duration-ms="133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.NewAccountTests@7dd7ec56]" started-at="2023-06-02T18:14:23 EET" name="setup" finished-at="2023-06-02T18:14:25 EET" duration-ms="2609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openSavingAccounts()[pri:0, instance:tests.NewAccountTests@7dd7ec56]" started-at="2023-06-02T18:14:25 EET" name="openSavingAccounts" finished-at="2023-06-02T18:14:29 EET" duration-ms="3743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSavingAccounts -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.NewAccountTests@7dd7ec56]" started-at="2023-06-02T18:14:29 EET" name="tear_down" finished-at="2023-06-02T18:14:29 EET" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.NewAccountTests -->
-      <class name="tests.RegisterTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.RegisterTestCases@5e62ca19]" started-at="2023-06-02T18:13:39 EET" name="setup" finished-at="2023-06-02T18:13:42 EET" duration-ms="2746" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="successfulRegister()[pri:0, instance:tests.RegisterTestCases@5e62ca19]" started-at="2023-06-02T18:13:42 EET" name="successfulRegister" finished-at="2023-06-02T18:13:48 EET" duration-ms="6332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulRegister -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:tests.RegisterTestCases@5e62ca19]" started-at="2023-06-02T18:13:48 EET" name="tear_down" finished-at="2023-06-02T18:13:48 EET" duration-ms="121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_down -->
-      </class> <!-- tests.RegisterTestCases -->
-    </test> <!-- Test3 -->
   </suite> <!-- Suite -->
 </testng-results>

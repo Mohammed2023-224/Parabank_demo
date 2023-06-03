@@ -3,10 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
+import base.SetupDriver;
 
-public class RequestLoan extends DriverIdentify{
+public class RequestLoan extends SetupDriver{
 
 	public By loan_amount=(By.xpath("//input[@id='amount']"));
 	
@@ -32,7 +33,7 @@ public class RequestLoan extends DriverIdentify{
 	}
 	
 	public void typeDownPayment(String amount) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(down_payment, 5);
 		ac.typing(down_payment, amount);
 		Loggers.logger.info("type down payment");

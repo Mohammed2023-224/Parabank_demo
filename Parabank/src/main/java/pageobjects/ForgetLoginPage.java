@@ -3,11 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
 import base.SetupDriver;
 
-public class ForgetLoginPage extends DriverIdentify {
+public class ForgetLoginPage extends SetupDriver {
 
 
 	// forget login form first name field
@@ -33,28 +33,28 @@ public class ForgetLoginPage extends DriverIdentify {
 
 
 	public void typeFormCity(String city) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(city_field, 5);
 		ac.typing(city_field, city);
 		Loggers.logger.info("type city in registration form");
 	}
 	
 	public void typeFormAddress(String street) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(address_field, 5);
 		ac.typing(address_field, street);
 		Loggers.logger.info("type address in registration form");
 	}
 	
 	public void typeFormState(String state) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(state_field, 5);
 		ac.typing(state_field, state);
 		Loggers.logger.info("type state in registrarion form");
 	}
 	
 	public void typeZipCode(String zipcode) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(zipcode_field, 5);
 		ac.typing(zipcode_field, zipcode);
 		Loggers.logger.info("type zipcode in registration form");
@@ -62,27 +62,27 @@ public class ForgetLoginPage extends DriverIdentify {
 	
 	
 	public void typeSSN(String ssn) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(ssn_field, 5);
 		ac.typing(ssn_field, ssn);
 		Loggers.logger.info("type ssn in registration form");
 	}
 	
 	public void typeFormFirstName(String fname) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(first_name_field, 5);
 		ac.typing(first_name_field, fname);
 		Loggers.logger.info("type first name in registran form");
 	}
 	
 	public void typeFormLastName(String lname) {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(last_name_field, 5);
 		ac.typing(last_name_field, lname);
 		Loggers.logger.info("type last name in registration form");
 	}
 	public void clickFindMyLoginInfo() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(find_login_btn, 5);
 		ac.click(find_login_btn);
 		Loggers.logger.info("click on find login info btn in registration form");
@@ -90,7 +90,7 @@ public class ForgetLoginPage extends DriverIdentify {
 
 	public void navigateToPage() {
 		LogInForm loginform=new LogInForm();
-		driver.navigate().to(SetupDriver.prop.getProperty("Home_page"));
+		DriverFactory.getDriver().navigate().to(SetupDriver.prop.getProperty("Home_page"));
 
 		loginform.clickForgetLoginInfo();
 		Loggers.logger.info("Navigate to forget login info page");

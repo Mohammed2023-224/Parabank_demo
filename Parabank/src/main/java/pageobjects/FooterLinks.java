@@ -3,10 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
+import base.SetupDriver;
 
-public class FooterLinks extends DriverIdentify {
+public class FooterLinks extends SetupDriver {
 
 	// home footer link xpath
 	public By home_footer_link = (By.xpath("//div[@id=\"footerPanel\"]//a[text()='Home']"));
@@ -31,49 +32,49 @@ public class FooterLinks extends DriverIdentify {
 	public By contacts_footer_link = (By.xpath("//div[@id='footerPanel']//a[text()='Contact Us']"));
 
 	public void clickHomeFooterLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(home_footer_link, 5);
 		ac.click(home_footer_link);
 		Loggers.logger.info("click on home link from footer panel");
 	}
 
 	public void clickServicesFooterLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(services_footer_link, 5);
 		ac.click(services_footer_link);
 		Loggers.logger.info("click on services link from footer panel");
 	}
 
 	public void clickLocationsFooterLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(locations_footer_link, 5);
 		ac.click(locations_footer_link);
 		Loggers.logger.info("click on locations link from foter panel");
 	}
 
 	public void clickForum() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(forum_footer_link, 5);
 		ac.click(forum_footer_link);
 		Loggers.logger.info("click on forum link");
 	}
 
 	public void clickSiteMap() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(site_map_footer_link, 5);
 		ac.click(site_map_footer_link);
 		Loggers.logger.info("click on site map link");
 	}
 
 	public void clcikProductsFooterLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(products_footer_link, 5);
 		ac.click(products_footer_link);
 		Loggers.logger.info("click on products link from footer panel");
 	}
 
 	public void clickContackFooterLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(contacts_footer_link, 5);
 		ac.click(contacts_footer_link);
 		Loggers.logger.info("click on contacts link from foter panel");

@@ -3,10 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
+import base.SetupDriver;
 
-public class LeftPanelLinks extends DriverIdentify {
+public class LeftPanelLinks extends SetupDriver {
 	// left menu about us link xpath
 	public By about_us_link = (By.xpath("//ul[@class='leftmenu']//child::a[text()='About Us']"));
 	// left menu services link xpath
@@ -19,35 +20,35 @@ public class LeftPanelLinks extends DriverIdentify {
 	public By admin_page_link = (By.xpath("//ul[@class='leftmenu']//child::a[text()='Admin Page']"));
 
 	public void clickServices() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(services_link, 5);
 		ac.click(services_link);
 		Loggers.logger.info("click on services link");
 	}
 
 	public void clickAboutUsLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(about_us_link, 5);
 		ac.click(about_us_link);
 		Loggers.logger.info("click on about us link");
 	}
 
 	public void clickAdminPage() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(admin_page_link, 5);
 		ac.click(admin_page_link);
 		Loggers.logger.info("click on admin page link");
 	}
 
 	public void clcikProducts() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(products_link, 5);
 		ac.click(products_link);
 		Loggers.logger.info("click on products link");
 	}
 
 	public void clickLocations() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(locations_link, 5);
 		ac.click(locations_link);
 		Loggers.logger.info("click on locations link");

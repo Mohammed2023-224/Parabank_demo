@@ -9,109 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test2</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,172</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">93,593</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Test3</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">50,196</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">191,961</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">14,722</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.LogInTestCases</td><td><a href="#m0">validLogIn</a></td><td rowspan="1">1685722388966</td><td rowspan="1">15196</td></tr><tr><th colspan="4">Test2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.LogInTestCases</td><td><a href="#m1">invalidLogIn</a></td><td rowspan="1">1685722382517</td><td rowspan="1">3832</td></tr><tr class="passedodd"><td rowspan="2">tests.NewAccountTests</td><td><a href="#m2">openCheckingAccounts</a></td><td rowspan="1">1685722407016</td><td rowspan="1">3619</td></tr><tr class="passedodd"><td><a href="#m3">openSavingAccounts</a></td><td rowspan="1">1685722413304</td><td rowspan="1">5423</td></tr><tr class="passedeven"><td rowspan="1">tests.RegisterTestCases</td><td><a href="#m4">successfulRegister</a></td><td rowspan="1">1685722374992</td><td rowspan="1">4486</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.NewAccountTests</td><td><a href="#m5">openCheckingAccounts</a></td><td rowspan="1">1685722421956</td><td rowspan="1">4352</td></tr><tr class="failedodd"><td rowspan="1">tests.RegisterTestCases</td><td><a href="#m6">successfulRegister</a></td><td rowspan="1">1685722373447</td><td rowspan="1">6593</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.LogInTestCases</td><td><a href="#m7">invalidLogIn</a></td><td rowspan="1">1685722397058</td><td rowspan="1">2003</td></tr><tr class="passedeven"><td><a href="#m8">validLogIn</a></td><td rowspan="1">1685722400013</td><td rowspan="1">4831</td></tr><tr class="passedodd"><td rowspan="1">tests.NewAccountTests</td><td><a href="#m9">openSavingAccounts</a></td><td rowspan="1">1685722443524</td><td rowspan="1">4861</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Test3 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.LogInTestCases</td><td><a href="#m10">validLogIn</a></td><td rowspan="1">1685722438424</td><td rowspan="1">16756</td></tr><tr><th colspan="4">Test3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.LogInTestCases</td><td><a href="#m11">invalidLogIn</a></td><td rowspan="1">1685722431001</td><td rowspan="1">4705</td></tr><tr class="passedodd"><td rowspan="2">tests.NewAccountTests</td><td><a href="#m12">openCheckingAccounts</a></td><td rowspan="1">1685722457923</td><td rowspan="1">5129</td></tr><tr class="passedodd"><td><a href="#m13">openSavingAccounts</a></td><td rowspan="1">1685722465796</td><td rowspan="1">3743</td></tr><tr class="passedeven"><td rowspan="1">tests.RegisterTestCases</td><td><a href="#m14">successfulRegister</a></td><td rowspan="1">1685722422231</td><td rowspan="1">6332</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.LogInTestCases</td><td><a href="#m0">invalid_logins_excel</a></td><td rowspan="1">1685799444087</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.LogInTestCases</td><td><a href="#m1">invalidLogIn_wrongCredintials</a></td><td rowspan="1">1685799439642</td><td rowspan="1">3586</td></tr><tr class="passedeven"><td><a href="#m2">validLogIn</a></td><td rowspan="1">1685799446056</td><td rowspan="1">4705</td></tr></tbody>
 </table>
-<h2>Test2</h2><h3 id="m0">tests.LogInTestCases#validLogIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:29599, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29599/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 319bb66a-34f6-402a-8823-f422334b8577
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
+<h2>Test</h2><h3 id="m0">tests.LogInTestCases#invalid_logins_excel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()&quot; because the return value of &quot;org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)&quot; is null
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.LogInTestCases#invalidLogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.NewAccountTests#openCheckingAccounts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.NewAccountTests#openSavingAccounts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.RegisterTestCases#successfulRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test</h2><h3 id="m5">tests.NewAccountTests#openCheckingAccounts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;type&apos;]&quot;}
-  (Session info: MicrosoftEdge=113.0.1774.57)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d07c611dc55626a9cdef7a0b87ae7fd, findElement {using=xpath, value=//select[@id=&apos;type&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59014}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59014/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d07c611dc55626a9cdef7a0b87ae7fd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at tests.NewAccountTests.openCheckingAccounts(NewAccountTests.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.RegisterTestCases#successfulRegister</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7551c8a9-3170-4b10-813c-a7a24ad3db22, findElement {using=xpath, value=//h1[@class=&apos;title&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:32285, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21148, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:32285/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at tests.RegisterTestCases.successfulRegister(RegisterTestCases.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.LogInTestCases#invalidLogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">tests.LogInTestCases#validLogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">tests.NewAccountTests#openSavingAccounts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test3</h2><h3 id="m10">tests.LogInTestCases#validLogIn</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59115}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59115/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56975a11ef077b3e71cf2bb5a387aaf6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">tests.LogInTestCases#invalidLogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">tests.NewAccountTests#openCheckingAccounts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">tests.NewAccountTests#openSavingAccounts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">tests.RegisterTestCases#successfulRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()&quot; because the return value of &quot;org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)&quot; is null
+	at util.GetData.read_excel_sheet1(GetData.java:31)
+	at tests.LogInTestCases.dataexcelsheet(LogInTestCases.java:134)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.LogInTestCases#invalidLogIn_wrongCredintials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LogInTestCases#validLogIn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

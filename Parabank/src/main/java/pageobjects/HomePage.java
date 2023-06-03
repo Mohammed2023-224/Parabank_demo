@@ -3,11 +3,11 @@ package pageobjects;
 import org.openqa.selenium.By;
 
 import base.Action;
-import base.DriverIdentify;
+import base.DriverFactory;
 import base.Loggers;
 import base.SetupDriver;
 
-public class HomePage extends DriverIdentify {
+public class HomePage extends SetupDriver {
 	
 	// services read more link xpath
 	public By services_read_more_btn = (By.xpath("//a[@href='services.htm' and text()=\"Read More\" ]"));
@@ -24,7 +24,7 @@ public class HomePage extends DriverIdentify {
 
 	
 	public void clickNewsLink() {
-		Action ac = new Action(driver);
+		Action ac = new Action(DriverFactory.getDriver());
 		ac.explicitWaitTillElementVisibility(news_link, 5);
 		ac.click(news_link);
 		Loggers.logger.info("click on news read more link");
@@ -32,7 +32,7 @@ public class HomePage extends DriverIdentify {
 
 	public void navigateToPage() {
 		
-		driver.navigate().to(SetupDriver.prop.getProperty("Home_page"));
+		DriverFactory.getDriver().navigate().to(SetupDriver.prop.getProperty("Home_page"));
 		Loggers.logger.info("Navigate to homepage");
 	}
 }

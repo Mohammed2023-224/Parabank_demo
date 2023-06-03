@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\USER\First_automation_workspace\Parabank\testng.xml</span>
+                    <span>C:\Users\USER\First_automation_workspace\Parabank\try.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,36 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 4 failed,   11 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.NewAccountTests" class="method navigator-link" hash-for-method="openCheckingAccounts">openCheckingAccounts</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="invalid_logins_excel">invalid_logins_excel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTestCases" class="method navigator-link" hash-for-method="successfulRegister">successfulRegister</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="validLogIn">validLogIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="validLogIn">validLogIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -133,52 +118,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="invalidLogIn">invalidLogIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="invalidLogIn">invalidLogIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="invalidLogIn">invalidLogIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.NewAccountTests" class="method navigator-link" hash-for-method="openCheckingAccounts">openCheckingAccounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.NewAccountTests" class="method navigator-link" hash-for-method="openCheckingAccounts">openCheckingAccounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.NewAccountTests" class="method navigator-link" hash-for-method="openSavingAccounts">openSavingAccounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.NewAccountTests" class="method navigator-link" hash-for-method="openSavingAccounts">openSavingAccounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.NewAccountTests" class="method navigator-link" hash-for-method="openSavingAccounts">openSavingAccounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTestCases" class="method navigator-link" hash-for-method="successfulRegister">successfulRegister</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.RegisterTestCases" class="method navigator-link" hash-for-method="successfulRegister">successfulRegister</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LogInTestCases" class="method navigator-link" hash-for-method="invalidLogIn_wrongCredintials">invalidLogIn_wrongCredintials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -198,146 +138,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">tests.LogInTestCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validLogIn">
-                  </a> <!-- validLogIn -->
-                  <span class="method-name">validLogIn</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:29599, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30284, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:29599/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 319bb66a-34f6-402a-8823-f422334b8577
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
+                  <a name="invalid_logins_excel">
+                  </a> <!-- invalid_logins_excel -->
+                  <span class="method-name">invalid_logins_excel</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()&quot; because the return value of &quot;org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)&quot; is null
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLogIn">
-                  </a> <!-- validLogIn -->
-                  <span class="method-name">validLogIn</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;login&apos;]//child::input[@name=&apos;username&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59115}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59115/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 56975a11ef077b3e71cf2bb5a387aaf6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at base.Action.explicitWaitTillElementVisibility(Action.java:63)
-	at tests.LogInTestCases.validLogIn(LogInTestCases.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 18 stack frames
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()&quot; because the return value of &quot;org.apache.poi.xssf.usermodel.XSSFRow.getCell(int)&quot; is null
+	at util.GetData.read_excel_sheet1(GetData.java:31)
+	at tests.LogInTestCases.dataexcelsheet(LogInTestCases.java:134)
+	... 25 more
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.NewAccountTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="openCheckingAccounts">
-                  </a> <!-- openCheckingAccounts -->
-                  <span class="method-name">openCheckingAccounts</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;type&apos;]&quot;}
-  (Session info: MicrosoftEdge=113.0.1774.57)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [0d07c611dc55626a9cdef7a0b87ae7fd, findElement {using=xpath, value=//select[@id=&apos;type&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 113.0.1774.57, ms:edgeOptions: {debuggerAddress: localhost:59014}, msedge: {msedgedriverVersion: 113.0.1774.57 (b3b212deff59..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59014/devtoo..., se:cdpVersion: 113.0.1774.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d07c611dc55626a9cdef7a0b87ae7fd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at tests.NewAccountTests.openCheckingAccounts(NewAccountTests.java:18)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.RegisterTestCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulRegister">
-                  </a> <!-- successfulRegister -->
-                  <span class="method-name">successfulRegister</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7551c8a9-3170-4b10-813c-a7a24ad3db22, findElement {using=xpath, value=//h1[@class=&apos;title&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:32285, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21148, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:32285/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at tests.RegisterTestCases.successfulRegister(RegisterTestCases.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -346,23 +169,9 @@ Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidLogIn">
-                  </a> <!-- invalidLogIn -->
-                  <span class="method-name">invalidLogIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidLogIn">
-                  </a> <!-- invalidLogIn -->
-                  <span class="method-name">invalidLogIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidLogIn">
-                  </a> <!-- invalidLogIn -->
-                  <span class="method-name">invalidLogIn</span>
+                  <a name="invalidLogIn_wrongCredintials">
+                  </a> <!-- invalidLogIn_wrongCredintials -->
+                  <span class="method-name">invalidLogIn_wrongCredintials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -370,71 +179,6 @@ Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
                   <a name="validLogIn">
                   </a> <!-- validLogIn -->
                   <span class="method-name">validLogIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.NewAccountTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="openCheckingAccounts">
-                  </a> <!-- openCheckingAccounts -->
-                  <span class="method-name">openCheckingAccounts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openCheckingAccounts">
-                  </a> <!-- openCheckingAccounts -->
-                  <span class="method-name">openCheckingAccounts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openSavingAccounts">
-                  </a> <!-- openSavingAccounts -->
-                  <span class="method-name">openSavingAccounts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openSavingAccounts">
-                  </a> <!-- openSavingAccounts -->
-                  <span class="method-name">openSavingAccounts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openSavingAccounts">
-                  </a> <!-- openSavingAccounts -->
-                  <span class="method-name">openSavingAccounts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.RegisterTestCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulRegister">
-                  </a> <!-- successfulRegister -->
-                  <span class="method-name">successfulRegister</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulRegister">
-                  </a> <!-- successfulRegister -->
-                  <span class="method-name">successfulRegister</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -442,40 +186,19 @@ Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\First_automation_workspace\Parabank\testng.xml</span>
+            <span class="header-content">C:\Users\USER\First_automation_workspace\Parabank\try.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;listeners.ReportListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;browsername&quot; value=&quot;chrome&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.RegisterTestCases&quot;/&gt;
-      &lt;class name=&quot;tests.LogInTestCases&quot;/&gt;
-      &lt;class name=&quot;tests.NewAccountTests&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browsername&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.RegisterTestCases&quot;/&gt;
       &lt;class name=&quot;tests.LogInTestCases&quot;/&gt;
-      &lt;class name=&quot;tests.NewAccountTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Test3&quot;&gt;
-    &lt;parameter name=&quot;browsername&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.RegisterTestCases&quot;/&gt;
-      &lt;class name=&quot;tests.LogInTestCases&quot;/&gt;
-      &lt;class name=&quot;tests.NewAccountTests&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -487,13 +210,7 @@ Session ID: 7551c8a9-3170-4b10-813c-a7a24ad3db22
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Test2 (3 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Test3 (3 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -519,72 +236,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validLogIn')
 data.setCell(0, 2, 'tests.LogInTestCases')
-data.setCell(0, 3, 16756);
+data.setCell(0, 3, 4705);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLogIn')
+data.setCell(1, 1, 'invalidLogIn_wrongCredintials')
 data.setCell(1, 2, 'tests.LogInTestCases')
-data.setCell(1, 3, 15196);
+data.setCell(1, 3, 3586);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'successfulRegister')
-data.setCell(2, 2, 'tests.RegisterTestCases')
-data.setCell(2, 3, 6593);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'successfulRegister')
-data.setCell(3, 2, 'tests.RegisterTestCases')
-data.setCell(3, 3, 6332);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'openSavingAccounts')
-data.setCell(4, 2, 'tests.NewAccountTests')
-data.setCell(4, 3, 5423);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'openCheckingAccounts')
-data.setCell(5, 2, 'tests.NewAccountTests')
-data.setCell(5, 3, 5129);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'openSavingAccounts')
-data.setCell(6, 2, 'tests.NewAccountTests')
-data.setCell(6, 3, 4861);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validLogIn')
-data.setCell(7, 2, 'tests.LogInTestCases')
-data.setCell(7, 3, 4831);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'invalidLogIn')
-data.setCell(8, 2, 'tests.LogInTestCases')
-data.setCell(8, 3, 4705);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'successfulRegister')
-data.setCell(9, 2, 'tests.RegisterTestCases')
-data.setCell(9, 3, 4486);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'openCheckingAccounts')
-data.setCell(10, 2, 'tests.NewAccountTests')
-data.setCell(10, 3, 4352);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'invalidLogIn')
-data.setCell(11, 2, 'tests.LogInTestCases')
-data.setCell(11, 3, 3832);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'openSavingAccounts')
-data.setCell(12, 2, 'tests.NewAccountTests')
-data.setCell(12, 3, 3743);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'openCheckingAccounts')
-data.setCell(13, 2, 'tests.NewAccountTests')
-data.setCell(13, 3, 3619);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'invalidLogIn')
-data.setCell(14, 2, 'tests.LogInTestCases')
-data.setCell(14, 3, 2003);
+data.setCell(2, 1, 'invalid_logins_excel')
+data.setCell(2, 2, 'tests.LogInTestCases')
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -610,239 +279,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">tests.LogInTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">successfulRegister</span>
-                <span class="method-start">2171 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">successfulRegister</span>
-                <span class="method-start">3716 ms</span>
+                <span class="method-name">invalidLogIn_wrongCredintials</span>
+                <span class="method-start">3079 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tear_down</span>
-                <span class="method-start">8213 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LogInTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">8764 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">8768 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LogInTestCases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">invalidLogIn</span>
-                <span class="method-start">11241 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">15074 ms</span>
+                <span class="method-start">6666 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
-                <span class="method-start">15593 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validLogIn</span>
-                <span class="method-start">17690 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">25008 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidLogIn</span>
-                <span class="method-start">25782 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">27786 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">27970 ms</span>
+                <span class="method-start">7526 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLogIn</span>
-                <span class="method-start">28737 ms</span>
+                <span class="method-start">9493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tear_down</span>
-                <span class="method-start">32887 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.NewAccountTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">33504 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LogInTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">33568 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.NewAccountTests</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">openCheckingAccounts</span>
-                <span class="method-start">35740 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">39360 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">39935 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">openSavingAccounts</span>
-                <span class="method-start">42028 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">47452 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">48208 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.NewAccountTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">49830 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">openCheckingAccounts</span>
-                <span class="method-start">50680 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterTestCases</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">successfulRegister</span>
-                <span class="method-start">50955 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.NewAccountTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">55033 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.RegisterTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">57288 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LogInTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">57410 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidLogIn</span>
-                <span class="method-start">59725 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">64430 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">64498 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validLogIn</span>
-                <span class="method-start">67148 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.NewAccountTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">71287 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">openSavingAccounts</span>
-                <span class="method-start">72248 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">77111 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LogInTestCases</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">83905 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.NewAccountTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">84017 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">openCheckingAccounts</span>
-                <span class="method-start">86647 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">91777 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">91911 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">openSavingAccounts</span>
-                <span class="method-start">94520 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">98265 ms</span>
+                <span class="method-start">14200 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
