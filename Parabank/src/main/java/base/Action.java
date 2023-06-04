@@ -3,7 +3,6 @@ package base;
 
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,12 +22,16 @@ public class Action {
 
 	// check if element is displayed
 	public boolean isDisplayed(By ele) {
-
+		Loggers.logger.info("check existense of element");
 		if (driver.findElement(ele).isDisplayed()) {
+
 			return true;
+			
 		} else {
+
 			return false;
 		}
+
 
 	}
 
@@ -36,31 +39,34 @@ public class Action {
 	public void click(By ele) {
 		Actions act = new Actions(driver);
 		act.moveToElement(driver.findElement(ele));
+		Loggers.logger.info("Move to the element");
 		driver.findElement(ele).click();
+		Loggers.logger.info("clcik on the element"+ele.toString());
 	}
 
 	// type into web element
 	public void typing( By ele, String info) {
 		driver.findElement(ele).clear();
+		Loggers.logger.info("clear field");
 		driver.findElement(ele).sendKeys(info);
+		Loggers.logger.info("type in the field");
 	}
-	//implicit wait
-	@SuppressWarnings("deprecation")
-	public void implicitWait(int timeout) {
-		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-	}
+
 	//get url
 	public String getCurrentURL() {
+		Loggers.logger.info("getting current url");
 		return driver.getCurrentUrl();
 	}
 
 	public void backNavigate() {
+		Loggers.logger.info("navigate to last page");
 		driver.navigate().back();
 	}
 
 	public void explicitWaitTillElementVisibility(By ele,int time) {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(time))  ;
 				wait.until(ExpectedConditions.visibilityOfElementLocated(ele) );
+				Loggers.logger.info("wait for the visibility of the element ");
 	}
 
 }

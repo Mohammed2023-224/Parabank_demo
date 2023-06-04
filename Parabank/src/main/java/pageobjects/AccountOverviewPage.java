@@ -14,11 +14,15 @@ public class AccountOverviewPage extends SetupDriver {
 		LogInForm loginform=new LogInForm();
 		AccountServiceLinks servicelinks=new AccountServiceLinks();
 		homepage.navigateToPage();
+		Loggers.logger.info("navigate to home page");
 		loginform.typeUserName("hhh");
 		loginform.typePassword("hhh");
 		loginform.clickLogin();
+		Loggers.logger.info("sign in ");
 		servicelinks.clcikOverView();
-		Loggers.logger.info("navigate to home page then sign in then click account overview");
+
+		
+		Loggers.logger.info("clicck account overview");
 
 	}
 }

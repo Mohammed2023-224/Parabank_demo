@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 public class DriverFactory {
 
 	protected static  ThreadLocal<WebDriver> driver=new ThreadLocal<>();
+
 	
 	public static WebDriver getDriver() {
 		Loggers.logger.debug("get the driver from ThreadLocal variable");

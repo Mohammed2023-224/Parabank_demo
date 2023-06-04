@@ -15,6 +15,7 @@ import pageobjects.HomePage;
 import pageobjects.LogInForm;
 import pageobjects.RegisterPage;
 import util.GetData;
+import util.GetJsonFileInvalidData;
 
 public class LogInTestCases extends SetupDriver {
 
@@ -40,7 +41,7 @@ public class LogInTestCases extends SetupDriver {
 		registerpage.clickFormSubmitBtn();
 
 		homepage.navigateToPage();
-		ac.explicitWaitTillElementVisibility(loginform.user_name_field, 10);
+		ac.explicitWaitTillElementVisibility(loginform.user_name_field, 20);
 		loginform.typeUserName("hhh");
 		loginform.typePassword("hhh");
 		loginform.clickLogin();
@@ -61,82 +62,60 @@ public class LogInTestCases extends SetupDriver {
 	}
 	
 	
-//	@Test
-//	public void invalidLogIn_NoCredintials() {
-//		HomePage homepage = new HomePage();
-//		LogInForm loginform = new LogInForm();
-//		homepage.navigateToPage();
-//		loginform.typeUserName(" ");
-//		loginform.typePassword(" ");
-//		loginform.clickLogin();
-//		Assert.assertTrue(DriverFactory.getDriver().findElement(loginform.error_message).isDisplayed());
-//
-//	}
-//	
-//	
-//	@Test
-//	public void invalidLogIn_NoUserName() {
-//		HomePage homepage = new HomePage();
-//		LogInForm loginform = new LogInForm();
-//		homepage.navigateToPage();
-//		loginform.typeUserName("");
-//		loginform.typePassword("sauce exists");
-//		loginform.clickLogin();
-//		Assert.assertTrue(DriverFactory.getDriver().findElement(loginform.error_message).isDisplayed());
-//
-//	}
-//	
-//	
-//	
-//	@Test
-//	public void invalidLogIn_NoPassword() {
-//		HomePage homepage = new HomePage();
-//		LogInForm loginform = new LogInForm();
-//		homepage.navigateToPage();
-//		loginform.typeUserName("soyy never");
-//		loginform.typePassword("");
-//		loginform.clickLogin();
-//		Assert.assertTrue(DriverFactory.getDriver().findElement(loginform.error_message).isDisplayed());
-//	}
-//		
-//		
-//	
-//		
-//		
-//		
-//		@DataProvider
-//		public Object[][] invalidData() {
-//			return new Object[][] {
-//				{ "12", "34", "An internal error has occurred and has been logged." },
-//				{ "12", "", "Please enter a username and password." },
-//				{ "", "34", "Please enter a username and password." },
-//				{ "", "", "Please enter a username and password." } };
-//		}
-//
-//	@Test(dataProvider = "invalidData")
-//	public void invalid_logins(String username,String password,String error_message) {
-//		HomePage homepage = new HomePage();
-//		LogInForm loginform = new LogInForm();
-//		homepage.navigateToPage();
-//		loginform.typeUserName(username);
-//		loginform.typePassword(password);
-//		loginform.clickLogin();
-//		Assert.assertEquals(DriverFactory.getDriver().findElement(loginform.error_message).getText(),error_message);
-//	}
-	
-	
-	
-	
-	
-	@DataProvider
-	public Object[][] dataexcelsheet() throws InvalidFormatException, IOException{
-	 GetData gd= new GetData ();
-	 return  gd.read_excel_sheet1();
+	@Test
+	public void invalidLogIn_NoCredintials() {
+		HomePage homepage = new HomePage();
+		LogInForm loginform = new LogInForm();
+		homepage.navigateToPage();
+		loginform.typeUserName(" ");
+		loginform.typePassword(" ");
+		loginform.clickLogin();
+		Assert.assertTrue(DriverFactory.getDriver().findElement(loginform.error_message).isDisplayed());
+
 	}
 	
 	
-	@Test(dataProvider = "dataexcelsheet")
-	public void invalid_logins_excel(String username,String password,String error_message) {
+	@Test
+	public void invalidLogIn_NoUserName() {
+		HomePage homepage = new HomePage();
+		LogInForm loginform = new LogInForm();
+		homepage.navigateToPage();
+		loginform.typeUserName("");
+		loginform.typePassword("sauce exists");
+		loginform.clickLogin();
+		Assert.assertTrue(DriverFactory.getDriver().findElement(loginform.error_message).isDisplayed());
+
+	}
+	
+	
+	
+	@Test
+	public void invalidLogIn_NoPassword() {
+		HomePage homepage = new HomePage();
+		LogInForm loginform = new LogInForm();
+		homepage.navigateToPage();
+		loginform.typeUserName("soyy never");
+		loginform.typePassword("");
+		loginform.clickLogin();
+		Assert.assertTrue(DriverFactory.getDriver().findElement(loginform.error_message).isDisplayed());
+	}
+		
+		
+	
+		
+		
+		
+		@DataProvider
+		public Object[][] invalidData() {
+			return new Object[][] {
+				{ "12", "34", "An internal error has occurred and has been logged." },
+				{ "12", "", "Please enter a username and password." },
+				{ "", "34", "Please enter a username and password." },
+				{ "", "", "Please enter a username and password." } };
+		}
+
+	@Test(dataProvider = "invalidData")
+	public void invalid_logins(String username,String password,String error_message) {
 		HomePage homepage = new HomePage();
 		LogInForm loginform = new LogInForm();
 		homepage.navigateToPage();
@@ -145,4 +124,57 @@ public class LogInTestCases extends SetupDriver {
 		loginform.clickLogin();
 		Assert.assertEquals(DriverFactory.getDriver().findElement(loginform.error_message).getText(),error_message);
 	}
+	
+	
+	
+	
+	
+	@DataProvider
+	public Object[][] invalidLoginsData() throws InvalidFormatException, IOException{
+	 GetData gd= new GetData ();
+	 return  gd.read_excel_sheet1();
+	}
+	
+	@DataProvider
+	public Object[][] getInvalidLoginsData() throws  IOException, InvalidFormatException {
+		 GetData gd= new GetData ();
+	    Object[][] data = gd.read_excel_sheet1(); // assuming you have defined the read_excel_sheet1 method
+	    
+	    return data;
+	}
+	
+	@Test(dataProvider = "getInvalidLoginsData")
+	public void invalid_logins_excel(String username, String password, String message) {
+
+		HomePage homepage = new HomePage();
+		LogInForm loginform = new LogInForm();
+		homepage.navigateToPage();
+		loginform.typeUserName(username);
+		loginform.typePassword(password);
+		loginform.clickLogin();
+		Assert.assertEquals(DriverFactory.getDriver().findElement(loginform.error_message).getText(),message);
+	}
+	
+	
+	
+	@DataProvider
+	public String[] invalid_JSON_file() throws IOException{
+		GetJsonFileInvalidData data=new GetJsonFileInvalidData();
+		return data.invalid_JSON_file();		
+	}
+	
+	@Test(dataProvider = "invalid_JSON_file")
+	public void invalid_logins_excel(String data) {
+			String users[]=data.split(",");
+			
+		HomePage homepage = new HomePage();
+		LogInForm loginform = new LogInForm();
+		homepage.navigateToPage();
+		loginform.typeUserName(users[0].replace("\"", ""));
+		loginform.typePassword(users[1].replace("\"", ""));
+		loginform.clickLogin();
+		Assert.assertEquals(DriverFactory.getDriver().findElement(loginform.error_message).getText(),users[2].replace("\"", ""));
+	}
+	
+	
 }
