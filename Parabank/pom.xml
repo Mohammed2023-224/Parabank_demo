@@ -3,8 +3,8 @@
 	<groupId>Parabank</groupId>
 	<artifactId>Parabank</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<build>
-		<!-- To define the plugin version in your parent POM -->
+
+   <build> 
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -17,14 +17,10 @@
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.11.0</version>
-				</plugin>
 			</plugins>
 		</pluginManagement>
-	</build>
+	</build>         
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -81,6 +77,12 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>4.1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.11.0</version>
 		</dependency>
 	</dependencies>
 </project>

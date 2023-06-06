@@ -15,10 +15,11 @@ public class GetJsonFileInvalidData {
 				+ "resources" + File.separator + "data" + File.separator + "invalid Data.json");
 		Loggers.logger.info("reading JSON file");
 		Object obj=com.google.gson.JsonParser.parseReader(fr);
-		Loggers.logger.info("parse json file to java object");
+		Loggers.logger.info("parse json file to json element");
 		JsonObject username=(JsonObject) obj;
+		Loggers.logger.info("parse json element to json object");
 		JsonArray arrray=(JsonArray) username.get("data");
-		Loggers.logger.info("create array for the wanted tag");
+		Loggers.logger.info("create json array from json object");
 		String arr[]=new String[arrray.size()];
 		
 		for (int i=0;i<arrray.size();i++) {
