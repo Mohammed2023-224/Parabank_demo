@@ -8,7 +8,7 @@ import base.Loggers;
 import base.SetupDriver;
 
 public class RequestLoan extends SetupDriver{
-
+	 private  Action ac = new Action(DriverFactory.getDriver());
 	public By loan_amount=(By.xpath("//input[@id='amount']"));
 	
 	public By down_payment=(By.xpath("//input[@id='downPayment']"));
@@ -33,7 +33,7 @@ public class RequestLoan extends SetupDriver{
 	}
 	
 	public void typeDownPayment(String amount) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(down_payment, 5);
 		ac.typing(down_payment, amount);
 		Loggers.logger.info("type down payment");

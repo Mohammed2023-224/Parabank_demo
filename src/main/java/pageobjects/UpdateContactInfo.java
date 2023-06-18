@@ -8,7 +8,7 @@ import base.Loggers;
 import base.SetupDriver;
 
 public class UpdateContactInfo extends SetupDriver {
-
+	 private  Action ac = new Action(DriverFactory.getDriver());
 	public By fname=(By.xpath("//input[@id='customer.firstName']"));
 	public By lname=(By.xpath("//input[@id='customer.lastName']"));
 	public By address=(By.xpath("//input[@id='customer.address.street']"));
@@ -21,14 +21,14 @@ public class UpdateContactInfo extends SetupDriver {
 	public By update_btn=(By.xpath("//input[@class='button']"));
 	
 	public void typeFname(String firstname) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(fname, 5);
 		ac.typing(this.fname, firstname);
 		Loggers.logger.info("type first name");
 	}
 	
 	public void typeLname(String lastname) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(lname, 5);
 		ac.typing(lname, lastname);
 		Loggers.logger.info("type last name");
@@ -36,7 +36,7 @@ public class UpdateContactInfo extends SetupDriver {
 	
 	
 	public void typeAddress(String adress) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(address, 5);
 		ac.typing(address, adress);
 		Loggers.logger.info("type addresss");
@@ -44,7 +44,7 @@ public class UpdateContactInfo extends SetupDriver {
 	
 	
 	public void typeCity(String city) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(this.city, 5);
 		ac.typing(this.city, city);
 		Loggers.logger.info("type city");
@@ -52,7 +52,7 @@ public class UpdateContactInfo extends SetupDriver {
 	
 	
 	public void typeState(String state) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(this.state, 5);
 		ac.typing(this.state, state);
 		Loggers.logger.info("type state");
@@ -60,21 +60,21 @@ public class UpdateContactInfo extends SetupDriver {
 	
 	
 	public void typeZipCOde(String zip) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(zipcode, 5);
 		ac.typing(zipcode, zip);
 		Loggers.logger.info("type zipcode");
 	}
 	
 	public void typePhone(String phone) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(this.phone, 5);
 		ac.typing(this.phone, phone);
 		Loggers.logger.info("type phone number");
 	}
 	
 	public void clickUpdate() {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(update_btn, 5);
 		ac.click(update_btn);
 		Loggers.logger.info("click on update btn");

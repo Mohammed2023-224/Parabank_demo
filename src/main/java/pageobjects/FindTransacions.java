@@ -7,7 +7,7 @@ import base.Loggers;
 import base.SetupDriver;
 
 public class FindTransacions extends SetupDriver{
-	
+	 private  Action ac = new Action(DriverFactory.getDriver());
 	public By find_by_id_field=(By.xpath("//input[@id='criteria.transactionId']"));
 	
 	public By find_by_date_field=(By.xpath("//input[@id='criteria.onDate']"));
@@ -31,39 +31,39 @@ public class FindTransacions extends SetupDriver{
 
 	
 	public void clickFindByID() {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_id_btn, 5);
 		ac.click(find_by_id_btn);
 		Loggers.logger.info("click on home link from footer panel");
 	}
 	public void clickFindByDate() {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_date_btn, 5);
 		ac.click(find_by_date_btn);
 		Loggers.logger.info("click on find_by_date_btn");
 	}
 	public void clickFindByDateRange() {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_date_range_btn, 5);
 		ac.click(find_by_date_range_btn);
 		Loggers.logger.info("click on find_by_date_range_btn");
 	}
 	public void clickFindByAmount() {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_amount_btn, 5);
 		ac.click(find_by_amount_btn);
 		Loggers.logger.info("click on find_by_amount_btn");
 	}
 	
 	public void typeTransactionID(String id) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_id_field, 5);
 		ac.typing(find_by_id_field, id);
 		Loggers.logger.info("type transaction id");
 	}
 	
 	public void typeDate(String date) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_date_field, 5);
 		ac.typing(find_by_date_field, date);
 		Loggers.logger.info("type date in the date field");
@@ -71,14 +71,14 @@ public class FindTransacions extends SetupDriver{
 	
 	
 	public void typefromdaterange(String date) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_date_range_from_field, 5);
 		ac.typing(find_by_date_range_from_field, date);
 		Loggers.logger.info("type user name");
 	}
 	
 	public void typeToDateRange(String date) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_date_range_to_field, 5);
 		ac.typing(find_by_date_range_to_field, date);
 		Loggers.logger.info("type user name");
@@ -86,7 +86,7 @@ public class FindTransacions extends SetupDriver{
 	
 	
 	public void typeAmount(String amount) {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(find_by_amount_field, 5);
 		ac.typing(find_by_amount_field, amount);
 		Loggers.logger.info("type user name");

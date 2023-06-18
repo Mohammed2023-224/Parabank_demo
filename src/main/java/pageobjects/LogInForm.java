@@ -8,7 +8,7 @@ import base.Loggers;
 import base.SetupDriver;
 
 public class LogInForm extends SetupDriver{
-
+	 private  Action ac = new Action(DriverFactory.getDriver());
 	// username xpath
 	public By user_name_field = (By.xpath("//div[@class='login']//child::input[@name='username']"));
 	// password field xpath
@@ -25,36 +25,37 @@ public class LogInForm extends SetupDriver{
 
 	
 	public void typeUserName(String username) {
-		Action ac = new Action(DriverFactory.getDriver());
-		ac.explicitWaitTillElementVisibility(user_name_field, 5);
+ 
+
+		ac.explicitWaitTillElementVisibility(user_name_field, 15);
 		ac.typing(user_name_field, username);
 		Loggers.logger.info("type user name");
 	}
 
 	public void typePassword(String pass) {
-		Action ac = new Action(DriverFactory.getDriver());
-		ac.explicitWaitTillElementVisibility(password_field, 5);
+ 
+		ac.explicitWaitTillElementVisibility(password_field, 15);
 		ac.typing(password_field, pass);
 		Loggers.logger.info("type password");
 	}
 
 	public void clickLogin() {
-		Action ac = new Action(DriverFactory.getDriver());
-		ac.explicitWaitTillElementVisibility(log_in_btn, 5);
+ 
+		ac.explicitWaitTillElementVisibility(log_in_btn, 15);
 		ac.click(log_in_btn);
 		Loggers.logger.info("click on login btn");
 	}
 
 	public void clickRegister() {
-		Action ac = new Action(DriverFactory.getDriver());
-		ac.explicitWaitTillElementVisibility(register_link, 5);
+ 
+		ac.explicitWaitTillElementVisibility(register_link, 15);
 		ac.click(register_link);
 		Loggers.logger.info("click on register link");
 	}
 
 	public void clickForgetLoginInfo() {
-		Action ac = new Action(DriverFactory.getDriver());
-		ac.explicitWaitTillElementVisibility(forget_login_link, 5);
+ 
+		ac.explicitWaitTillElementVisibility(forget_login_link, 15);
 		ac.click(forget_login_link);
 		Loggers.logger.info("click on forget login info link");
 	}

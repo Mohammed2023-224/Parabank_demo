@@ -9,7 +9,7 @@ import base.SetupDriver;
 
 public class OpenNewAccountPage extends SetupDriver {
 
-
+	 private  Action ac = new Action(DriverFactory.getDriver());
 
 public By acoount_id_verification=(By.xpath("//h1[@class='title']"));
 
@@ -35,7 +35,7 @@ public By acoount_id_verification=(By.xpath("//h1[@class='title']"));
 
 	}
 	public void clickOpenAccountBtn() {
-		Action ac = new Action(DriverFactory.getDriver());
+		 
 		ac.explicitWaitTillElementVisibility(open_new_account_btn, 5);
 		ac.click(open_new_account_btn);
 		Loggers.logger.info("click on open new account btn");

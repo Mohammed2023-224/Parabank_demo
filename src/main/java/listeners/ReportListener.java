@@ -30,7 +30,7 @@ public class ReportListener implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		test = extent.createTest(result.getName());
+		test = extent.createTest(result.getName(),result.getName()+"test passed");
 		test.createNode(result.getName());
 		test.log(Status.PASS, "test passed");
 		
