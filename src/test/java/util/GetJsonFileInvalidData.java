@@ -29,6 +29,7 @@ public class GetJsonFileInvalidData {
 			String pass=String.valueOf( users.get("password"));
 			String message=String.valueOf( users.get("message"));
 			arr[i]=user+","+pass+","+message;
+			arr[i]=user+","+pass;
 			Loggers.logger.info("create the string array from json file");
 		}
 		fr.close();

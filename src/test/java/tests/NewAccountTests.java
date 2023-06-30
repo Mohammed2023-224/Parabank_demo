@@ -7,9 +7,11 @@ import org.testng.annotations.Test;
 import base.Action;
 import base.DriverFactory;
 import base.SetupDriver;
+import io.qameta.allure.Description;
 import pageobjects.OpenNewAccountPage;
 
 public class NewAccountTests extends SetupDriver {
+	@Description("verifying opening new check accounts functionality")
 	@Test
 	public void openCheckingAccounts()   {
 		Action ac = new Action(DriverFactory.getDriver());
@@ -28,7 +30,7 @@ public class NewAccountTests extends SetupDriver {
 
 		Assert.assertTrue(DriverFactory.getDriver().findElement(opennewacoount.acoount_id_verification).isDisplayed());
 	}
-
+	@Description("verifying opening saving accounts functionality")
 	@Test
 	public void openSavingAccounts() {
 		Action ac = new Action(DriverFactory.getDriver());

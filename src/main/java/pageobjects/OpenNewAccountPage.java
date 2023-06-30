@@ -6,6 +6,7 @@ import base.Action;
 import base.DriverFactory;
 import base.Loggers;
 import base.SetupDriver;
+import io.qameta.allure.Step;
 
 public class OpenNewAccountPage extends SetupDriver {
 
@@ -31,11 +32,11 @@ public By acoount_id_verification=(By.xpath("//h1[@class='title']"));
 		loginform.typePassword("hhh");
 		loginform.clickLogin();
 		opennewaccount.clcikNewAccounts();
-		Loggers.logger.info("navigate to home page then sign in then click new accounts ");
 
 	}
+	
+	@Step("click open account button ")	
 	public void clickOpenAccountBtn() {
-		 
 		ac.explicitWaitTillElementVisibility(open_new_account_btn, 5);
 		ac.click(open_new_account_btn);
 		Loggers.logger.info("click on open new account btn");

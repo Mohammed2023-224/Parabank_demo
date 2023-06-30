@@ -6,10 +6,12 @@ import org.testng.annotations.Test;
 import base.DriverFactory;
 import base.FakeData;
 import base.SetupDriver;
+import io.qameta.allure.Description;
 import pageobjects.RegisterPage;
 
 public class RegisterTestCases extends SetupDriver{
 	FakeData fakers=new FakeData();
+	@Description("verifying successful register")
 	@Test
 	public void successfulRegister() {
 		RegisterPage registerpage=new RegisterPage();
@@ -29,7 +31,7 @@ public class RegisterTestCases extends SetupDriver{
 		Assert.assertTrue(DriverFactory.getDriver().findElement(registerpage.account_created_message).isDisplayed());
 	}
 	
-
+	@Description("verifying unsuccessful register different password ")
 	@Test
 	public void unsuccessfulRegister_differentPassword() {
 		RegisterPage registerpage=new RegisterPage();
@@ -49,7 +51,7 @@ public class RegisterTestCases extends SetupDriver{
 		Assert.assertTrue(DriverFactory.getDriver().findElement(registerpage.missmatchpasswordmesssage).isDisplayed());
 	}
 	
-	
+	@Description("verifying unsuccessful register no user name")
 	@Test
 	public void unsuccessfulRegister_NoUserNmae() {
 		RegisterPage registerpage=new RegisterPage();
@@ -70,7 +72,7 @@ public class RegisterTestCases extends SetupDriver{
 	}
 	
 	
-	
+	@Description("verifying unsuccessful register no password")
 	@Test
 	public void unsuccessfulRegister_NoPassword() {
 		RegisterPage registerpage=new RegisterPage();

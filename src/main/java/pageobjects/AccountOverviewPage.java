@@ -20,9 +20,5 @@ public class AccountOverviewPage extends SetupDriver {
 		loginform.clickLogin();
 		Loggers.logger.info("sign in ");
 		servicelinks.clcikOverView();
-
-		
-		Loggers.logger.info("clicck account overview");
-
 	}
 }

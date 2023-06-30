@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import base.Action;
 import base.DriverFactory;
 import base.SetupDriver;
+import io.qameta.allure.Description;
 import pageobjects.AccountOverviewPage;
 import pageobjects.HomePage;
 import pageobjects.LogInForm;
@@ -18,7 +19,7 @@ import util.GetData;
 import util.GetJsonFileInvalidData;
 
 public class LogInTestCases extends SetupDriver {
-
+	@Description("verifying valid login")
 	@Test
 	public void validLogIn() {
 		RegisterPage registerpage = new RegisterPage();
@@ -48,7 +49,7 @@ public class LogInTestCases extends SetupDriver {
 		Assert.assertTrue(DriverFactory.getDriver().findElement(account_overview.welcome_message).isDisplayed());
 
 	}
-
+	@Description("verifying invalid login wrong credintials")
 	@Test
 	public void invalidLogIn_wrongCredintials() {
 		HomePage homepage = new HomePage();
@@ -61,7 +62,7 @@ public class LogInTestCases extends SetupDriver {
 
 	}
 	
-	
+	@Description("verifying invalid login no credintials")
 	@Test
 	public void invalidLogIn_NoCredintials() {
 		HomePage homepage = new HomePage();
@@ -74,7 +75,7 @@ public class LogInTestCases extends SetupDriver {
 
 	}
 	
-	
+	@Description("verifying invalid login no user name")
 	@Test
 	public void invalidLogIn_NoUserName() {
 		HomePage homepage = new HomePage();
@@ -88,7 +89,7 @@ public class LogInTestCases extends SetupDriver {
 	}
 	
 	
-	
+	@Description("verifying invalid login no password")
 	@Test
 	public void invalidLogIn_NoPassword() {
 		HomePage homepage = new HomePage();
@@ -113,7 +114,7 @@ public class LogInTestCases extends SetupDriver {
 				{ "", "34", "Please enter a username and password." },
 				{ "", "", "Please enter a username and password." } };
 		}
-
+	@Description("verifying invalid login date provider edition")
 	@Test(dataProvider = "invalidData")
 	public void invalid_logins(String username,String password,String error_message) {
 		HomePage homepage = new HomePage();
@@ -126,15 +127,6 @@ public class LogInTestCases extends SetupDriver {
 	}
 	
 	
-	
-	
-	
-	@DataProvider
-	public Object[][] invalidLoginsData() throws InvalidFormatException, IOException{
-	 GetData gd= new GetData ();
-	 return  gd.read_excel_sheet1();
-	}
-	
 	@DataProvider
 	public Object[][] getInvalidLoginsData() throws  IOException, InvalidFormatException {
 		 GetData gd= new GetData ();
@@ -142,7 +134,7 @@ public class LogInTestCases extends SetupDriver {
 	    
 	    return data;
 	}
-	
+	@Description("verifying invalid login excel edition")
 	@Test(dataProvider = "getInvalidLoginsData")
 	public void invalid_logins_excel(String username, String password, String message) {
 
@@ -162,7 +154,7 @@ public class LogInTestCases extends SetupDriver {
 		GetJsonFileInvalidData data=new GetJsonFileInvalidData();
 		return data.invalid_JSON_file();		
 	}
-	
+	@Description("verifying valid login JSON file edition")
 	@Test(dataProvider = "invalid_JSON_file")
 	public void invalid_logins_excel(String data) {
 			String users[]=data.split(",");

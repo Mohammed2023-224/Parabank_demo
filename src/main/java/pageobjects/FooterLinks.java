@@ -6,6 +6,7 @@ import base.Action;
 import base.DriverFactory;
 import base.Loggers;
 import base.SetupDriver;
+import io.qameta.allure.Step;
 
 public class FooterLinks extends SetupDriver {
 	 private  Action ac = new Action(DriverFactory.getDriver());
@@ -30,51 +31,44 @@ public class FooterLinks extends SetupDriver {
 			"//div[@id='footerPanel']//a[text()='Site Map']"));
 	// contacts footer link xpath
 	public By contacts_footer_link = (By.xpath("//div[@id='footerPanel']//a[text()='Contact Us']"));
-
+	@Step("clicking on home page link ")
 	public void clickHomeFooterLink() {
-		 
 		ac.explicitWaitTillElementVisibility(home_footer_link, 5);
 		ac.click(home_footer_link);
 		Loggers.logger.info("click on home link from footer panel");
 	}
-
-	public void clickServicesFooterLink() {
-		 
+	@Step("clicking on services link ")
+	public void clickServicesFooterLink() { 
 		ac.explicitWaitTillElementVisibility(services_footer_link, 5);
 		ac.click(services_footer_link);
 		Loggers.logger.info("click on services link from footer panel");
 	}
-
+	@Step("clicking on Locations link ")
 	public void clickLocationsFooterLink() {
-		 
 		ac.explicitWaitTillElementVisibility(locations_footer_link, 5);
 		ac.click(locations_footer_link);
 		Loggers.logger.info("click on locations link from foter panel");
 	}
-
+	@Step("clicking on forums link ")
 	public void clickForum() {
-		 
 		ac.explicitWaitTillElementVisibility(forum_footer_link, 5);
 		ac.click(forum_footer_link);
 		Loggers.logger.info("click on forum link");
 	}
-
+	@Step("clicking on site map link ")
 	public void clickSiteMap() {
-		 
 		ac.explicitWaitTillElementVisibility(site_map_footer_link, 5);
 		ac.click(site_map_footer_link);
 		Loggers.logger.info("click on site map link");
 	}
-
+	@Step("clicking on products link ")
 	public void clcikProductsFooterLink() {
-		 
 		ac.explicitWaitTillElementVisibility(products_footer_link, 5);
 		ac.click(products_footer_link);
 		Loggers.logger.info("click on products link from footer panel");
 	}
-
-	public void clickContackFooterLink() {
-		 
+	@Step("clicking contacts link")
+	public void clickContackFooterLink() { 
 		ac.explicitWaitTillElementVisibility(contacts_footer_link, 5);
 		ac.click(contacts_footer_link);
 		Loggers.logger.info("click on contacts link from foter panel");
