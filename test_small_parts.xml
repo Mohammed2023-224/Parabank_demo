@@ -6,8 +6,7 @@
 		<classes>
 			<class name="tests.LogInTestCases">
 				<methods>
-					<include name="validLogIn" />
-					<include name="invalidLogIn_wrongCredintials" />
+					<include name="invalid_logins_Json" />
 				</methods>
 			</class>
 		</classes>

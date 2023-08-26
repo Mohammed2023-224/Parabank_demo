@@ -1,6 +1,0 @@
-tests\RegisterTestCases.class
-util\GetData.class
-util\GetJsonFileInvalidData.class
-tests\LogInTestCases.class
-tests\NewAccountTests.class
-tests\FooterTests.class

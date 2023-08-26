@@ -156,7 +156,7 @@ public class LogInTestCases extends SetupDriver {
 	}
 	@Description("verifying valid login JSON file edition")
 	@Test(dataProvider = "invalid_JSON_file")
-	public void invalid_logins_excel(String data) {
+	public void invalid_logins_Json(String data) {
 			String users[]=data.split(",");
 			
 		HomePage homepage = new HomePage();

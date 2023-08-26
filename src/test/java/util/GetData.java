@@ -22,9 +22,11 @@ public class GetData {
 			Loggers.logger.info("getting sheet1");
 		//get number of rows
 			int number_of_rows= mysheet.getPhysicalNumberOfRows();
+			System.out.print("number of reows:"+number_of_rows);
 			Loggers.logger.info("getting number of rows");
-			//get number of columns
+		//get number of columns
 			int number_of_columns= mysheet.getRow(0).getLastCellNum();
+			System.out.print("number of columns:"+number_of_columns);
 			Loggers.logger.info("getting number of columns");
 		//create multidimensional array
 			String[][] myarray=new String[number_of_rows-1][number_of_columns];
@@ -38,26 +40,27 @@ public class GetData {
 		//define cell 
 					 if (row != null && row.getCell(a) != null) {
 			                if (row.getCell(a).getCellType() == CellType.NUMERIC) {
-			                    myarray[i - 1][a] = String.valueOf(row.getCell(a).getNumericCellValue());
+			                    myarray[i-1 ][a] = String.valueOf(row.getCell(a).getNumericCellValue());
 			                    Loggers.logger.info("add numeric value to array");
 			                   
 			                } else if (row.getCell(a).getCellType() == CellType.STRING) {
-			                    myarray[i - 1][a] = row.getCell(a).getStringCellValue();
+			                    myarray[i-1 ][a] = row.getCell(a).getStringCellValue();
 			                    Loggers.logger.info("add string value to array");
 			      
 			                } else if (row.getCell(a).getCellType() == CellType.BOOLEAN) {
-			                    myarray[i - 1][a] = String.valueOf(row.getCell(a).getBooleanCellValue());
+			                    myarray[i -1][a] = String.valueOf(row.getCell(a).getBooleanCellValue());
 			                    Loggers.logger.info("add boolean value to array");
 			                } else {
-			                    myarray[i - 1][a] = "";
+			                    myarray[i-1 ][a] = "";
 			                }
 			            } else {
-			                myarray[i - 1][a] = "";
+			                myarray[i-1] [a] = "";
 			            }
 			        }
 			    }
 			    wb.close();
 			    Loggers.logger.info("close workbook");
+			    System.out.println(myarray.length);
 			    return myarray;
 
 }}
